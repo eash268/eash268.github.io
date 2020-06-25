@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
 
-
 <head>
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
+
     <!-- Required OGP Tags -->
     <meta property="og:title" content="Shyn Capital" />
     <meta property="og:type" content="website" />
@@ -24,6 +24,7 @@
         html,
         body {
             scroll-behavior: smooth;
+            font-family: 'Lato', sans-serif;
         }
 
         .clinq-blue {
@@ -44,7 +45,7 @@
 
         .tagline {
             margin: 0 0 42px 0; 
-            font-family: 'Rubik', sans-serif;
+            font-family: 'Lato', sans-serif;
             line-height: 75px; 
             /* font-weight: lighter; */
         }
@@ -96,40 +97,45 @@
             text-transform: capitalize !important;
             padding-left: 25px;
             padding-right: 25px;
-            /* font-family: 'Rubik', sans-serif;*/
-            font-family: 'Rubik', sans-serif;
+            /* font-family: 'Lato', sans-serif;*/
+            font-family: 'Lato', sans-serif;
         }
 
         .small-header {
             margin: 36px 0 36px 96px !important;
-            font-family: 'Rubik', sans-serif;
+            font-family: 'Lato', sans-serif;
             font-size: 16px;
             line-height: 30px;
+            font-weight: lighter;
+        }
+
+        .card-paragraph {
+            margin: 8px 0 8px 0 !important;
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: lighter;
+        }
+
+        .use-case-card {
+            background-color: #faf9f9;
+            padding: 16px 16px 16px 0;
+            border-radius: 5px;
+            margin-bottom: 36px;
+            width: 110%;
+            z-index: 90 !important; 
+            position: relative;
         }
     </style>
 
     <!-- Fonts and Icons -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
 
     <!-- Animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162463409-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-162463409-2');
-    </script>
 
 </head>
 
@@ -148,22 +154,22 @@
                         Log In
                     </a>
 
-                    <!-- <a href="https://medium.com/@shyn.capital" target="_blank" class="clinq-dark-blue-text hide-on-med-and-down right" style="font-family: 'Rubik', sans-serif; font-size: 20px; font-weight: lighter; margin: 18px 36px 18px 18px;">
+                    <!-- <a href="https://medium.com/@shyn.capital" target="_blank" class="clinq-dark-blue-text hide-on-med-and-down right" style="font-family: 'Lato', sans-serif; font-size: 20px; font-weight: lighter; margin: 18px 36px 18px 18px;">
                         Insights
                     </a> -->
 
                     <a href="#our-team" class="clinq-dark-blue-text hide-on-med-and-down right"
-                        style="font-family: 'Rubik', sans-serif; font-size: 18px; font-weight: lighter; margin: 20px 36px 18px 18px;">
+                        style="font-family: 'Lato', sans-serif; font-size: 18px; font-weight: lighter; margin: 20px 36px 18px 18px;">
                         Our Team
                     </a>
 
                     <a href="#why-clinq" class="clinq-dark-blue-text hide-on-med-and-down right"
-                        style="font-family: 'Rubik', sans-serif; font-size: 18px; font-weight: lighter; margin: 20px 18px 18px 24px;">
+                        style="font-family: 'Lato', sans-serif; font-size: 18px; font-weight: lighter; margin: 20px 18px 18px 24px;">
                         Why Clinq?
                     </a>
 
                     <a href="#products" class="clinq-dark-blue-text hide-on-med-and-down right"
-                        style="font-family: 'Rubik', sans-serif; font-size: 18px; font-weight: lighter; margin: 20px 18px 18px 24px;">
+                        style="font-family: 'Lato', sans-serif; font-size: 18px; font-weight: lighter; margin: 20px 18px 18px 24px;">
                         Products
                     </a>
                 </div>
@@ -209,26 +215,68 @@
 
     <div id="how-it-works" class="container hide-on-small-only" style="padding-top: 0;">
         <div class="row">
-            <div class="col xl6 m6 s12 left-align" style="padding: 36px 0 36px 0 !important;">
+            <div class="col xl5 m6 s12 left-align" style="padding: 36px 0 36px 0 !important;">
                 <h3 class="clinq-blue-text" style="margin: 0 0 0 0 !important; font-weight: bolder;">
                     Use Cases
                 </h3>
 
-                <p class="clinq-dark-blue-text left-align small-header" style="margin-left: 0 !important; margin-right: 96px !important;">
-                    Our machine learning technology leverages cross-merchant data to identify usage and consumption patterns, ultimately creating metrics to help determine the quality of a customer.
-                </p>
-                <p class="clinq-dark-blue-text left-align small-header" style="margin-left: 0 !important; margin-right: 96px !important;">
-                    Clinq’s platform intuitively consolidates profiles across multiple channels over time to continuously adapt our sense of customer-level preferences, purchase behaviors, associated acquisition costs, and revenues generated.
-                </p>
+                <div style="height: 50px;"></div>
+
+                <div class="use-case-card z-depth-1">
+                    <div class="row">
+                        <div class="col s3 center">
+                            <img style="height: 75px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.emstell.com%2Fwp-content%2Fuploads%2F2017%2F11%2FCircle-PNG-File.png&f=1&nofb=1">
+                        </div>
+                        <div class="col s9">
+                            <h5 class="clinq-blue-text" style="margin: 0 0 0 0 !important; font-weight: bolder;">
+                                Return Policy Abuse Prevention
+                            </h5>
+                            <p class="clinq-dark-blue-text left-align card-paragraph">
+                                Stop serving customers and merchants that are costing you more than they are bringing in
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="use-case-card z-depth-1">
+                    <div class="row">
+                        <div class="col s3 center">
+                            <img style="height: 75px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.emstell.com%2Fwp-content%2Fuploads%2F2017%2F11%2FCircle-PNG-File.png&f=1&nofb=1">
+                        </div>
+                        <div class="col s9">
+                            <h5 class="clinq-blue-text" style="margin: 0 0 0 0 !important; font-weight: bolder;">
+                                Freight Cost Mitigation
+                            </h5>
+                            <p class="clinq-dark-blue-text left-align card-paragraph">
+                                Stop supporting countries that don’t have sufficient demand
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="use-case-card z-depth-1">
+                    <div class="row">
+                        <div class="col s3 center">
+                            <img style="height: 75px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.emstell.com%2Fwp-content%2Fuploads%2F2017%2F11%2FCircle-PNG-File.png&f=1&nofb=1">
+                        </div>
+                        <div class="col s9">
+                            <h5 class="clinq-blue-text" style="margin: 0 0 0 0 !important; font-weight: bolder;">
+                                Product Inventory Optimization
+                            </h5>
+                            <p class="clinq-dark-blue-text left-align card-paragraph">
+                                Stop warehousing SKUs that end up costing more than their demand permits
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
-            <div class="col xl6 m6 s12 right-align">
-                <img src="img/UseCasesVectorBlob.png" style="max-height: 400px;">
+            <div class="col xl7 m6 s12 right-align" style="z-index: 80 !important; position: relative;">
+                <img src="img/UseCasesVectorBlob.png" style="margin-top: 75px; height: 500px;">
             </div>
         </div>
     </div>
-
-    
 
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
