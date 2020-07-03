@@ -18,6 +18,13 @@
     <title>Clinq Technologies</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <style>
@@ -28,7 +35,7 @@
         }
 
         .container {
-            width: 100% !important;
+            width: 90% !important;
         }
 
         .clinq-blue {
@@ -50,7 +57,9 @@
         .tagline {
             margin: 0 0 42px 0; 
             font-family: 'Lato', sans-serif;
-            line-height: 65px; 
+            line-height: 75px; 
+            font-weight: 700;
+            /* letter-spacing: 3px; */
             /* font-weight: lighter; */
         }
 
@@ -122,7 +131,7 @@
         }
 
         .use-case-card {
-            background-color: #faf9f9;
+            background-color: #fff;
             padding: 16px 16px 16px 0;
             border-radius: 5px;
             margin-bottom: 36px;
@@ -130,13 +139,12 @@
             z-index: 90 !important; 
             position: relative;
         }
-    </style>
 
-    <!-- Fonts and Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+        .get-started-now {
+            /* background-color: #68f9dd !important; */
+            background-image: linear-gradient(to bottom right, #2687cb, #68f9dd) !important;
+        }
+    </style>
 
     <!-- Animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
@@ -150,17 +158,13 @@
         <div class="">
             <div class="row">
                 <div class="col s4 left-align">
-                    <img src="img/logo_transparent.png" style="width: 50%; min-width: 60px; margin-top: 20px;">
+                    <img src="img/logo_transparent.png" style="height: 45px; min-width: 60px; margin-top: 16px; margin-left: 16px;">
                 </div>
                 <div class="col s8">
                     <a href=""
-                        class="waves-effect waves-light clinq-dark-blue btn contact-us-btn right z-depth-0">
+                        class="get-started-now waves-effect waves-light clinq-dark-blue btn contact-us-btn right z-depth-0">
                         Log In
                     </a>
-
-                    <!-- <a href="https://medium.com/@shyn.capital" target="_blank" class="clinq-dark-blue-text hide-on-med-and-down right" style="font-family: 'Lato', sans-serif; font-size: 20px; font-weight: lighter; margin: 18px 36px 18px 18px;">
-                        Insights
-                    </a> -->
 
                     <a href="#our-team" class="clinq-dark-blue-text hide-on-med-and-down right"
                         style="font-family: 'Lato', sans-serif; font-size: 18px; font-weight: lighter; margin: 20px 36px 18px 18px;">
@@ -183,11 +187,15 @@
 
     <div id="large-banner" class="hide-on-small-only">
         <div class="container">
-            <div class="row" style="margin-top: calc(32vh - 250px) !important;">
+            <div class="row" style="margin-top: calc(32vh - 300px) !important;">
                 <div class="col xl8 l4 m4 s12">
                     <h1 class="clinq-dark-blue-text tagline animate__animated animate__fadeIn animate__slow">
-                        Maximizing <br> value through <br> cross-company <br>analytics.
+                        Maximizing value <br> through cross-<br> company <font class="clinq-blue-text">analytics.</font>
                     </h1>
+                    <p class="clinq-dark-blue-text small-header" style="margin: 24px 0px 12px 0px !important;">
+                        at helping you to easily forecast the lifetime value of your <br>
+                        anticipated best and worst customers.
+                    </p>
                     <a href=""
                         class="waves-effect waves-light clinq-dark-blue btn contact-us-btn left z-depth-0 animate__animated animate__fadeIn animate__delay-1s animate__slow"
                         style="margin-top: 36px">
