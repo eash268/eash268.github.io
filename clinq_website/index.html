@@ -9,10 +9,10 @@
     <meta name="description" content="">
 
     <!-- Required OGP Tags -->
-    <meta property="og:title" content="Shyn Capital" />
+    <meta property="og:title" content="Clinq Technologies" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://shyn.capital" />
-    <meta property="og:image" content="img/ShynCapitalLogoPreview.png" />
+    <meta property="og:url" content="https://clinq.tech" />
+    <meta property="og:image" content="" />
 
     <!-- Title and Favicon -->
     <title>Clinq Technologies</title>
@@ -32,6 +32,7 @@
         body {
             scroll-behavior: smooth;
             font-family: 'Lato', sans-serif;
+            overflow-x: hidden;
         }
 
         .container {
@@ -58,6 +59,15 @@
             margin: 0 0 42px 0; 
             font-family: 'Lato', sans-serif;
             line-height: 75px; 
+            font-weight: 700;
+            /* letter-spacing: 3px; */
+            /* font-weight: lighter; */
+        }
+
+        .tagline2 {
+            margin: 0 0 42px 0; 
+            font-family: 'Lato', sans-serif;
+            line-height: 60px; 
             font-weight: 700;
             /* letter-spacing: 3px; */
             /* font-weight: lighter; */
@@ -153,7 +163,7 @@
 
 <body>
 
-    <!-- Banner (XL and L) -->
+    <!-- Navbar (XL and L) -->
     <div id="large-navbar" class="hide-on-small-only">
         <div class="">
             <div class="row">
@@ -161,7 +171,7 @@
                     <img src="img/logo_transparent.png" style="height: 45px; min-width: 60px; margin-top: 16px; margin-left: 16px;">
                 </div>
                 <div class="col s8">
-                    <a href=""
+                    <a href="https://www.clinq.dev/login"
                         class="get-started-now waves-effect waves-light clinq-dark-blue btn contact-us-btn right z-depth-0">
                         Log In
                     </a>
@@ -180,6 +190,16 @@
                         style="font-family: 'Lato', sans-serif; font-size: 18px; font-weight: lighter; margin: 20px 18px 18px 24px;">
                         Products
                     </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="small-navbar" class="hide-on-med-and-up">
+        <div class="">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <img src="img/logo_transparent.png" style="height: 25px; margin-top: 16px; margin-left: 16px;">
                 </div>
             </div>
         </div>
@@ -206,12 +226,34 @@
         </div>
     </div>
 
-    <div id="how-it-works" class="container hide-on-small-only">
+    <div id="small-banner" class="hide-on-med-and-up">
+        <div class="container">
+            <div class="row" style="margin-top: 5vh !important;">
+                <div class="col xl8 l4 m4 s12">
+                    <!-- <img src="./img/HeroImageBlob.png" style="width: 100%;"> -->
+                    <h2 class="clinq-dark-blue-text tagline2 animate__animated animate__fadeIn animate__slow">
+                        Maximizing value through cross-company <font class="clinq-blue-text">analytics.</font>
+                    </h2>
+                    <p class="clinq-dark-blue-text small-header" style="margin: 24px 0px 12px 0px !important;">
+                        We specialize in helping you to easily forecast the lifetime value of your <br>
+                        anticipated best and worst customers.
+                    </p>
+                    <a href="mailto:rohan@clinq.tech"
+                        class="waves-effect waves-light clinq-dark-blue btn contact-us-btn left z-depth-0 animate__animated animate__fadeIn animate__delay-1s animate__slow"
+                        style="margin-top: 36px">
+                        Get Started Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="how-it-works" class="container">
         <div class="row" style="margin-top: calc(30vh - 250px);">
             <div class="col xl6 m6 s12 left-align">
-                <img src="img/HowItWorksVectorBlob.png" style="max-height: 400px;">
+                <img src="img/HowItWorksVectorBlob.png" style="width: 100%; max-height: 400px;">
             </div>
-            <div class="col xl6 m6 s12 left-align" style="padding: 36px 0 36px 0 !important;">
+            <div class="col xl6 m6 s12 left-align hide-on-small-only" style="padding: 36px 0 36px 0 !important;">
                 <h3 class="clinq-blue-text" style="margin: 0 0 0 96px !important; font-weight: bolder;">How it Works</h3>
 
                 <p class="clinq-dark-blue-text left-align small-header">
@@ -220,12 +262,23 @@
                 <p class="clinq-dark-blue-text left-align small-header">
                     Clinq’s platform intuitively consolidates profiles across multiple channels over time to continuously adapt our sense of customer-level preferences, purchase behaviors, associated acquisition costs, and revenues generated.
                 </p>
-
             </div>
+
+            <div class="col xl6 m6 s12 left-align hide-on-med-and-up" style="padding: 0px 0 0px 0 !important;">
+                <h3 class="clinq-blue-text" style="margin: 24px 0 0 0px !important; font-weight: bolder;">How it Works</h3>
+
+                <p class="clinq-dark-blue-text left-align small-header" style="margin: 24px 0 0 0px !important;">
+                    Our machine learning technology leverages cross-merchant data to identify usage and consumption patterns, ultimately creating metrics to help determine the quality of a customer.
+                </p>
+                <p class="clinq-dark-blue-text left-align small-header" style="margin: 24px 0 0 0px !important;">
+                    Clinq’s platform intuitively consolidates profiles across multiple channels over time to continuously adapt our sense of customer-level preferences, purchase behaviors, associated acquisition costs, and revenues generated.
+                </p>
+            </div>
+
         </div>
     </div>
 
-    <div id="how-it-works" class="container hide-on-small-only" style="padding-top: 0;">
+    <div id="use-cases" class="container" style="padding-top: 0;">
         <div class="row">
             <div class="col xl5 m6 s12 left-align" style="padding: 36px 0 36px 0 !important;">
                 <h3 class="clinq-blue-text" style="margin: 0 0 0 0 !important; font-weight: bolder;">
@@ -234,7 +287,7 @@
 
                 <div style="height: 50px;"></div>
 
-                <div class="use-case-card z-depth-1">
+                <div class="use-case-card z-depth-1 hide-on-small-only">
                     <div class="row">
                         <div class="col s3 center">
                             <img style="height: 75px;" src="img/Return.png">
@@ -250,7 +303,7 @@
                     </div>
                 </div>
 
-                <div class="use-case-card z-depth-1">
+                <div class="use-case-card z-depth-1 hide-on-small-only">
                     <div class="row">
                         <div class="col s3 center">
                             <img style="height: 75px;" src="img/Freight.png">
@@ -266,7 +319,7 @@
                     </div>
                 </div>
 
-                <div class="use-case-card z-depth-1">
+                <div class="use-case-card z-depth-1 hide-on-small-only">
                     <div class="row">
                         <div class="col s3 center">
                             <img style="height: 75px;" src="img/Product.png">
@@ -282,28 +335,80 @@
                     </div>
                 </div>
 
+                <div class="use-case-card z-depth-1 hide-on-med-and-up" style="width: 100% !important;">
+                    <div class="row">
+                        <div class="col s12 center">
+                            <img style="height: 75px;" src="img/Return.png">
+                        </div>
+                        <div class="col s12 center">
+                            <h5 class="clinq-blue-text" style="margin: 0 0 0 0 !important; font-weight: bolder; font-size: 1.3rem;">
+                                Return Policy Abuse Prevention
+                            </h5>
+                            <p class="clinq-dark-blue-text card-paragraph">
+                                Stop serving customers that are costing you more than they are bringing in
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="use-case-card z-depth-1 hide-on-med-and-up" style="width: 100% !important;">
+                    <div class="row">
+                        <div class="col s12 center">
+                            <img style="height: 75px;" src="img/Freight.png">
+                        </div>
+                        <div class="col s12 center">
+                            <h5 class="clinq-blue-text" style="margin: 0 0 0 0 !important; font-weight: bolder; font-size: 1.3rem;">
+                                Freight Cost Mitigation
+                            </h5>
+                            <p class="clinq-dark-blue-text card-paragraph">
+                                Stop supporting countries that don’t have sufficient demand
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="use-case-card z-depth-1 hide-on-med-and-up" style="width: 100% !important;">
+                    <div class="row">
+                        <div class="col s12 center">
+                            <img style="height: 75px;" src="img/Product.png">
+                        </div>
+                        <div class="col s12 center">
+                            <h5 class="clinq-blue-text" style="margin: 0 0 0 0 !important; font-weight: bolder; font-size: 1.3rem;">
+                                Product Inventory Optimization
+                            </h5>
+                            <p class="clinq-dark-blue-text card-paragraph">
+                                Stop warehousing SKUs that end up costing more than their demand permits
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
             <div class="col xl7 m6 s12 right-align" style="z-index: 80 !important; position: relative;">
-                <img src="img/UseCasesVectorBlob.png" style="margin-top: 75px; height: 500px;">
+                <img src="img/UseCasesVectorBlob.png" style="margin-top: 75px; width: 100%; max-height: 500px;">
             </div>
         </div>
     </div>
 
     <div style="background-color: #fff">
-        <div id="how-it-works" class="container hide-on-small-only" style="padding-top: 0;">
-            <div class="row">
+        <div id="how-it-works" class="container" style="padding-top: 0;">
+            <div class="row" style="margin-top: 72px !important">
                 <div class="col s12 center-align" style="padding: 36px 0 36px 0 !important;">
                     <h3 class="clinq-blue-text" style="margin: 0 0 0 0 !important; font-weight: bolder;">
                         Why we are the best
                     </h3>
-                    <p class="clinq-dark-blue-text small-header" style="margin: 12px 0px 12px 0px !important; line-height: 20px;">
+                    <p class="clinq-dark-blue-text small-header hide-on-small-only" style="margin: 12px 0px 12px 0px !important; line-height: 20px;">
                         at helping you to easily forecast the lifetime value of your <br>
+                        anticipated best and worst customers.
+                    </p>
+                    <p class="clinq-dark-blue-text small-header hide-on-med-and-up" style="margin: 12px 0px 12px 0px !important; line-height: 20px;">
+                        at helping you to easily forecast the lifetime value of your
                         anticipated best and worst customers.
                     </p>
                 </div>
 
-                <div class="col s4 center-align" style="padding: 0px 24px 0px 24px !important;">
+                <div class="col m4 s12 center-align" style="padding: 0px 24px 0px 24px !important;">
                     <div class="card z-depth-1" style="padding: 24px !important;">
                         <img style="height: 200px;" src="img/CustomAnalytics.png">
                         <h5 class="clinq-blue-text" style="margin: 0 0 0 0 !important; font-weight: bolder; font-size: 1.3rem;"><br>
@@ -314,7 +419,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col s4 center-align" style="padding: 0px 24px 0px 24px !important;">
+                <div class="col m4 s12 center-align" style="padding: 0px 24px 0px 24px !important;">
                     <div class="card z-depth-1" style="padding: 24px !important;">
                         <img style="height: 200px;" src="img/PersonalizedDashboard.png">
                         <h5 class="clinq-blue-text" style="margin: 0 0 0 0 !important; font-weight: bolder; font-size: 1.3rem;"><br>
@@ -325,7 +430,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col s4 center-align" style="padding: 0px 24px 0px 24px !important;">
+                <div class="col m4 s12 center-align" style="padding: 0px 24px 0px 24px !important;">
                     <div class="card z-depth-1" style="padding: 24px !important;">
                         <img style="height: 200px;" src="img/RobustAPI.png">
                         <h5 class="clinq-blue-text" style="margin: 0 0 0 0 !important; font-weight: bolder; font-size: 1.3rem;"><br>
@@ -343,8 +448,8 @@
     <div id="how-it-works" style="background-color: #06182b;">
         <div class="container">
             <div class="row">
-                <div class="col s4">
-                    <img src="./img/logo_transparent.png" style="filter: brightness(10000000%); height: 50px;">
+                <div class="col m4 s12">
+                    <img src="./img/logo_transparent.png" style="filter: brightness(10000000%); height: 50px; width: auto; max-width: 90%;">
                     <p class="white-text" style="font-weight: lighter; margin-top: 12px !important; font-size: 12px;">Our team of world-class data scientists and business consultants discovers patterns and insights from your company's data. By creating insights from customers across several businesses, Clinq can predict how someone will behave as a customer of your business, allowing you to easily forecast the lifetime value of your anticipated best and worst customers.</p>
                     <p class="white-text" style="font-weight: lighter; margin-top: 48px !important; font-size: 12px;">Copyright © 2020 Clinq Technologies, Inc. All rights reserved.</p>
                 </div>
@@ -357,7 +462,7 @@
                     }
                 </style>
 
-                <div class="col s2" style="padding-top: 8px !important;">
+                <div class="col s2 hide-on-small-only" style="padding-top: 8px !important;">
                     <b style="font-weight: 900; text-transform: uppercase;" class="white-text">About Us</b><br>
                     <div class="footer-link">
                         <a class="white-text">How it Works</a>
@@ -369,7 +474,7 @@
                         <a class="white-text">Our Advantage</a>
                     </div>
                 </div>
-                <div class="col s2" style="padding-top: 8px !important;">
+                <div class="col s2 hide-on-small-only" style="padding-top: 8px !important;">
                     <b style="font-weight: 900; text-transform: uppercase;" class="white-text">Learn More</b>
                     <div class="footer-link">
                         <a class="white-text">Products</a>
@@ -381,7 +486,7 @@
                         <a class="white-text">Our Team</a>
                     </div>
                 </div>
-                <div class="col s2" style="padding-top: 8px !important;">
+                <div class="col s2 hide-on-small-only" style="padding-top: 8px !important;">
                     <b style="font-weight: 900; text-transform: uppercase;" class="white-text">Socials</b>
                     <div class="footer-link">
                         <a class="white-text">Facebook</a>
