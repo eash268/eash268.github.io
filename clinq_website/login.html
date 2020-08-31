@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <!-- Required OGP Tags -->
+    <meta property="og:title" content="Clinq Technologies" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://clinq.tech" />
+    <meta property="og:image" content="" />
+
+    <!-- Title and Favicon -->
+    <title>Clinq Technologies</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <style>
+        html,
+        body {
+            scroll-behavior: smooth;
+            font-family: 'Lato', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90% !important;
+        }
+
+        .clinq-blue {
+            background-color: #2687cb !important;
+        }
+
+        .clinq-blue-text {
+            color: #2687cb !important;
+        }
+
+        .clinq-dark-blue {
+            background-color: #1a315d !important;
+        }
+
+        .clinq-dark-blue-text {
+            color: #1a315d !important;
+        }
+
+        .tagline {
+            margin: 0 0 42px 0; 
+            font-family: 'Lato', sans-serif;
+            line-height: 75px; 
+            font-weight: 700;
+            /* letter-spacing: 3px; */
+            /* font-weight: lighter; */
+        }
+
+        .tagline2 {
+            margin: 0 0 42px 0; 
+            font-family: 'Lato', sans-serif;
+            line-height: 60px; 
+            font-weight: 700;
+            /* letter-spacing: 3px; */
+            /* font-weight: lighter; */
+        }
+
+        .row,
+        .col,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        #large-navbar {
+            padding: 24px;
+        }
+
+        #large-banner {
+            height: calc(100vh);
+            background: url("img/loginbg.svg") left top no-repeat;
+            position: left;
+            background-size: cover;
+            /* background-color: #223555; */
+            background-color: white;
+            background-repeat: no-repeat;
+        }
+
+        #how-it-works {
+            padding-top: 96px;
+            padding-bottom: 96px;
+        }
+
+        .contact-us-btn {
+            font-size: 18px;
+            line-height: 42px;
+            height: 45px;
+            margin-top: 12px;
+            margin-bottom: 44.5px;
+            border-radius: 10px !important;
+            text-transform: capitalize !important;
+            padding-left: 25px;
+            padding-right: 25px;
+            /* font-family: 'Lato', sans-serif;*/
+            font-family: 'Lato', sans-serif;
+        }
+
+        .small-header {
+            margin: 36px 0 36px 96px !important;
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: lighter;
+        }
+
+        .card-paragraph {
+            margin: 8px 0 8px 0 !important;
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: lighter;
+        }
+
+        .use-case-card {
+            background-color: #fff;
+            padding: 16px 16px 16px 0;
+            border-radius: 5px;
+            margin-bottom: 36px;
+            width: 110%;
+            z-index: 90 !important; 
+            position: relative;
+        }
+
+        .get-started-now {
+            /* background-color: #68f9dd !important; */
+            background-image: linear-gradient(to bottom right, #2687cb, #68f9dd) !important;
+        }
+
+        input {
+            border-radius: 6px !important;
+            padding-left: 10px !important;
+            width: calc(100% - 10px) !important;
+        }
+
+        /* label focus color */
+        .input-field input[type=text]:focus+label {
+            color: #fff;
+        }
+
+        /* label underline focus color */
+        .input-field input[type=text]:focus {
+            border-bottom: 1px solid #fff !important;
+            box-shadow: 0 1px 0 0 #fff !important;
+        }
+
+        /* label underline focus color */
+        .input-field input[type=password]:focus {
+            border-bottom: 1px solid #fff !important;
+            box-shadow: 0 1px 0 0 #fff !important;
+        }
+
+        .input-label {
+            font-size: 18px;
+            font-weight: lighter;
+        }
+    </style>
+
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+</head>
+
+<body>
+
+    <div id="large-banner" class="hide-on-small-only">
+        <div class="row">
+            <div class="col s4 push-s8 clinq-dark-blue" style="margin-top: 12% !important; border-radius: 10px !important; padding: 48px !important; padding-top: 72px !important; padding-bottom: 72px !important; margin-left: -72px !important;">
+                <h3 class="white-text center" style="font-weight: bolder;">
+                    Welcome to Clinq!
+                </h3>
+                <br><br>
+
+                <div class="row">
+                    <form id="authForm" class="col s12" id="authForm" style="margin-bottom: 0;">
+                        <div class="row left-align">
+                            <div class="input-field no_margin col s12">
+                                <p class="input-label white-text no_margin left">Username</p>
+                                <input class="white" id="username" type="email" name="username" style="margin-bottom: 0;">
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="row no_margin_bottom">
+                            <div class="left-align input-field no_margin col s12">
+                                <p class="input-label white-text no_margin left">Password</p>
+                                <input class="white" id="password" type="password" name="password">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div onclick="window.location='signup.html'" class="light-inner z-depth-0 col s6" style="margin-top: 12px; padding-top: 14px; padding-bottom: 14px;">
+                        <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span class="white-text">Remember Me</span>
+                        </label>
+                        </p>
+                    </div>
+                    <div onclick="window.location='signup.html'" class="light-inner z-depth-0 col s6" style="margin-top: 12px; padding-top: 14px; padding-bottom: 14px;">
+                        <p class="right white-text">Forgot your password?</p>
+                    </div>
+                </div>
+    
+                <br>
+
+                <div class="row">
+                    <div class="inner center z-depth-1 clinq-blue" style="margin-top: 12px; padding-top: 14px; padding-bottom: 14px;">
+                        <p class="white-text">LOGIN</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+</body>
+
+</html>
