@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+
+        <!-- Required OGP Tags -->
+        <meta property="og:title" content="Unstoppable Docs" />
+        <meta property="og:type" content="website" />
+        <!-- <meta property="og:url" content="" /> -->
+        <!-- <meta property="og:image" content="" /> -->
+
+        <!-- Title and Favicon -->
+        <title>Unstoppable Docs</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+        <!-- Fonts and Icons -->
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <style>
+            html,
+            body {
+                scroll-behavior: smooth;
+                font-family: 'Playfair Display', serif;
+                overflow-x: hidden;
+            }
+
+            .container,
+            .row,
+            .col,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .main_blue {
+                background-color: #5a79b9 !important;
+            }
+
+            .main_blue_text {
+                color: #5a79b9 !important;
+            }
+
+            .lighter_blue {
+                background-color: #d8e4f1 !important;
+            }
+
+            .lighter_blue_text {
+                color: #d8e4f1 !important;
+            }
+
+            .light_white {
+                background-color: #fefefe !important;
+            }
+
+            .light_white_text {
+                color: #fefefe !important;
+            }
+
+        </style>
+
+        <!-- Animations -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    </head>
+
+    <body class="light_white">
+        <div class="hide-on-med-and-down" id="desktop_site">
+
+            <style>
+                #topnav {
+                    height: 12.5vh;
+                    width: 100%;
+                    cursor: pointer;
+                    margin-left: 5vh !important;
+                }
+
+                .nav_item {
+                    height: 100%;
+                    width: 200px;
+                    padding-top: 5vh !important;
+                }
+
+                .nav_item > p {
+                    font-size: 16px;
+                }
+
+                .logo_item {
+                    height: 100%;
+                    width: 200px;
+                    padding-top: 4vh !important;
+                    margin-right: 10vh !important;
+                }
+
+                .logo_item > #logo {
+                    font-size: 24px;
+                }
+            </style>
+            <div id="topnav" class="row animate__animated animate__fadeInDown">
+                <div class="col nav_item main_blue center">
+                    <p class="light_white_text">Home</p>
+                </div>
+
+                <div class="col nav_item center">
+                    <p class="main_blue_text">Menu</p>
+                </div>
+
+                <div class="col nav_item center">
+                    <p class="main_blue_text">About</p>
+                </div>
+
+                <div class="col nav_item center">
+                    <p class="main_blue_text">Contact</p>
+                </div>
+
+                <div class="col nav_item center">
+                    <p class="main_blue_text">Schedule</p>
+                </div>
+
+                <div class="col logo_item right center">
+                    <p class="main_blue_text" id="logo">
+                        <b>Unstoppable<font class="lighter_blue_text">Docs</font></b>
+                    </p>
+                </div>
+            </div>
+
+            <style>
+                #main {
+                    height: 77.5vh;
+                    background: url("./img/bg3.jpg") center top no-repeat; 
+                    position: center;
+                    background-size: cover;
+                    background-color: #fefefe;
+                    background-repeat: no-repeat;
+                }
+
+                #left {
+                    /* height: 100%;
+                    background: url("./img/bg.jpg") center top no-repeat; 
+                    position: right;
+                    background-size: cover;
+                    background-color: #fefefe;
+                    background-repeat: no-repeat; */
+                }
+            </style>
+            <div id="main" class="row">
+
+                <div class="col xl7 l5" id="left"></div>
+
+                <div class="col xl5 l7">
+                    <style>
+                        #title {
+                            overflow-x: scroll;
+                            overflow-y: hidden;
+                            padding-top: 100px !important;
+                            padding-bottom: 100px !important;
+                            padding-left: 75px !important;
+                        }
+
+                        #title_title {
+                            text-transform: uppercase;
+                            font-size: 60px;
+                            letter-spacing: 4px;
+                            font-weight: 700;
+                            line-height: 80px;
+                        }
+
+                        #title_description {
+                            font-size: 18px;
+                        }
+
+                        #subscribe {
+                            padding-top: 80px !important;
+                            padding-left: 5vh !important;
+                            padding-right: 5vh !important;
+                        }
+
+                        .input-field {
+                            width: 400px !important;
+                            margin: 0;
+                        }
+
+                        .contact-us-btn {
+                            font-size: 18px;
+                            line-height: 42px;
+                            height: 45px;
+                            border-radius: 0px !important;
+                            text-transform: capitalize !important;
+                            padding-left: 50px;
+                            padding-right: 50px;
+                            color: #fefefe;
+                            font-family: 'Rubik', sans-serif;
+                        }
+                    </style>
+                    <div class="row lighter_blue animate__animated animate__fadeInRight animate__delay-1s" id="title">
+                        <h1 id="title_title" class="main_blue_text">
+                            Unstoppable
+                        </h1>
+
+                        <h1 id="title_title" class="white-text" style="margin-top: -15px !important">
+                            Docs
+                        </h1>
+
+                        <br>
+                        <p class="main_blue_text" id="title_description">
+                            Welcome to the best podcast in the world.
+                        </p>
+                        <p class="main_blue_text" id="title_description">
+                            Enjoy the latest medical info and advice from industry leaders.
+                        </p>
+                        <p class="main_blue_text" id="title_description">
+                            Podcast hosted by Saranya Bala M.D.
+                        </p>
+                    </div>
+
+                    <div class="row animate__animated animate__fadeIn animate__delay-2s" id="subscribe">                                         
+                        <div class="col s6 center">
+                            <a class="contact-us-btn z-depth-0 waves-effect waves-light main_blue btn" style="font-size: 20px; font-weight: 100;">Listen</a>
+                        </div>
+                        <div class="col s6 center">
+                            <a class="contact-us-btn z-depth-0 waves-effect waves-light main_blue btn" style="font-size: 20px; font-weight: 100;">Subscribe</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <style>
+                #footer {
+                    height: 10vh;
+                    padding-top: 4vh !important;
+                    padding-left: 5vh !important;
+                    padding-right: 5vh !important;
+                    padding-top: 4vh !important;
+                }
+            </style>
+            <div id="footer" class="row lighter_blue">
+                <div class="col s8">
+                    <p class="main_blue_text">© 2020 Unstoppable Docs. All Rights Reserved.</p>
+                </div>
+                <div class="col s4 right-align">
+                    <p class="main_blue_text">📧 saranyac.bala@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+    <!-- JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			
+		});
+	</script>
+
+</html>
