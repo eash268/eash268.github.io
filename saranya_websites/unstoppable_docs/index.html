@@ -111,20 +111,16 @@
                     <p class="light_white_text">Home</p>
                 </div>
 
-                <div class="col nav_item center">
+                <div class="col nav_item center" onclick="M.toast({html: 'Coming soon!'})">
                     <p class="main_blue_text">Menu</p>
                 </div>
 
-                <div class="col nav_item center">
+                <div class="col nav_item center" onclick="M.toast({html: 'Coming soon!'})">
                     <p class="main_blue_text">About</p>
                 </div>
 
                 <div class="col nav_item center">
                     <p class="main_blue_text">Contact</p>
-                </div>
-
-                <div class="col nav_item center">
-                    <p class="main_blue_text">Schedule</p>
                 </div>
 
                 <div class="col logo_item right center">
@@ -185,21 +181,16 @@
                             padding-right: 5vh !important;
                         }
 
-                        .input-field {
-                            width: 400px !important;
-                            margin: 0;
-                        }
-
                         .contact-us-btn {
-                            font-size: 18px;
-                            line-height: 42px;
-                            height: 45px;
+                            font-size: 16px;
+                            line-height: 45px;
+                            height: 50px;
                             border-radius: 0px !important;
                             text-transform: capitalize !important;
                             padding-left: 50px;
                             padding-right: 50px;
                             color: #fefefe;
-                            font-family: 'Rubik', sans-serif;
+                            /* font-family: 'Rubik', sans-serif; */
                         }
                     </style>
                     <div class="row lighter_blue animate__animated animate__fadeInRight animate__delay-1s" id="title">
@@ -225,10 +216,47 @@
 
                     <div class="row animate__animated animate__fadeIn animate__delay-2s" id="subscribe">                                         
                         <div class="col s6 center">
-                            <a class="contact-us-btn z-depth-0 waves-effect waves-light main_blue btn" style="font-size: 20px; font-weight: 100;">Listen</a>
+                            <a onclick="M.toast({html: 'Coming soon!'})" class="contact-us-btn z-depth-0 waves-effect waves-light main_blue btn">Listen Now!</a>
                         </div>
                         <div class="col s6 center">
-                            <a class="contact-us-btn z-depth-0 waves-effect waves-light main_blue btn" style="font-size: 20px; font-weight: 100;">Subscribe</a>
+                            <!-- Modal Trigger -->
+                            <a href="#modal1" class="contact-us-btn z-depth-0 waves-effect waves-light main_blue btn modal-trigger">Subscribe</a>
+
+                            <!-- Modal Structure -->
+                            <style>
+                                .modal {
+                                    width: 30% !important;
+                                }
+
+                                input {
+                                    background-color: white !important;
+                                    border-bottom-color: white !important;
+                                    padding-left: 12px !important;
+                                    width: calc(100% - 12px) !important;
+                                }
+                            </style>
+                            <div id="modal1" class="modal lighter_blue">
+                                <div class="modal-content">
+                                <h4 class="main_blue_text">NEVER MISS AN <b class="white-text">EPISODE</b></h4>
+                                <br>
+                                <p class="main_blue_text left-align">
+                                    The Unstoppable Docs Podcast interviews medical thought leaders from all over the world and provides a weekly overview of the latest news from the medical community.
+                                </p>
+
+                                <form class="col s12">
+                                    <div class="input-field">
+                                    <input id="email" type="text" placeholder="Enter your email">
+                                    </div>
+                                </form>
+
+                                <br>
+
+                                <a onclick="subscribe()" class="waves-effect waves-light z-depth-0 main_blue btn modal-close" style="width: 100%;">Subscribe</a>
+
+                                <br><br>
+                                </div>
+                            </div>
+          
                         </div>
                     </div>
 
@@ -263,8 +291,33 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 	<script>
 		$(document).ready(function () {
-			
+			$('.modal').modal();
 		});
+
+        function subscribe() {
+            var email = document.getElementById("email").value;
+            console.log(email);
+
+            var formData = {
+                "email": email,
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "https://shyncapital.herokuapp.com/log_email_saranya",
+                data: JSON.stringify(formData),
+                success: function (res) {
+                    console.log(res);
+                    M.toast({html: "Thank you for subscribing!"});
+                },
+                error: function (err) {
+                    console.log(err);
+                    M.toast({html: "Something went wrong. Please try again."});
+                },
+                dataType: "json",
+                contentType: "application/json"
+            });
+        }
 	</script>
 
 </html>
