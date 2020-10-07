@@ -295,6 +295,7 @@
 		});
 
         function subscribe() {
+            M.toast({html: "Thank you for subscribing!"});
             var email = document.getElementById("email").value;
             console.log(email);
 
@@ -308,11 +309,9 @@
                 data: JSON.stringify(formData),
                 success: function (res) {
                     console.log(res);
-                    M.toast({html: "Thank you for subscribing!"});
                 },
                 error: function (err) {
                     console.log(err);
-                    M.toast({html: "Something went wrong. Please try again."});
                 },
                 dataType: "json",
                 contentType: "application/json"
