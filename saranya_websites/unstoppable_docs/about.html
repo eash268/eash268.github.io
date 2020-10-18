@@ -76,6 +76,7 @@
     </head>
 
     <body class="light_white">
+
         <div id="modal1" class="modal lighter_blue">
             <div class="modal-content">
             <h4 class="main_blue_text">NEVER MISS AN <b class="white-text">EPISODE</b></h4>
@@ -97,6 +98,57 @@
             <br><br>
             </div>
         </div>
+
+        <div id="modal2" class="modal lighter_blue">
+            <div class="modal-content">
+            <h4 class="main_blue_text center">SEND US A <b class="white-text">NOTE</b></h4>
+            <br>
+            <p class="main_blue_text left-align">
+                We love notes and suggestions from our listeners! Do you know a physician who is an Unstoppable Doc? 
+                Let us know what makes them unstoppable, and please include their
+                practice info/website and a way to get in touch with them.
+            </p>
+
+            <style>
+                #email:focus {
+                    border-bottom: none!important;
+                    box-shadow: none!important;
+                }
+            </style>
+            <form class="col s12">
+                <div class="input-field">
+                    <input id="name" type="text" placeholder="Your Name">
+                </div>
+                <div class="input-field">
+                    <input id="contact" type="text" placeholder="Email Address">
+                </div>
+                <div class="input-field" >
+                    <input id="suggestion" style="height: 100px;" type="text">
+                </div>
+            </form>
+
+            <a onclick="suggest()" class="waves-effect waves-light z-depth-0 main_blue btn modal-close" style="width: 100%;">Send</a>
+
+            <br><br>
+            </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <style>
+            .modal {
+                width: 95% !important;
+                max-width: 500px;
+            }
+
+            input {
+                background-color: white !important;
+                border-bottom-color: white !important;
+                padding-left: 12px !important;
+                width: calc(100% - 12px) !important;
+            }
+        </style>
+
+
         <div class="hide-on-med-and-down" id="desktop_site">
             <style>
                 #topnav {
@@ -151,9 +203,11 @@
                     </div>
                 </a>
 
-                <div class="col nav_item center">
-                    <p class="main_blue_text">Contact</p>
-                </div>
+                <a href="#modal2" class="modal-trigger">
+                    <div class="col nav_item center">
+                        <p class="main_blue_text">Contact</p>
+                    </div>
+                </a>
 
                 <div class="col logo_item right center">
                     <p class="main_blue_text" id="logo">
@@ -206,7 +260,8 @@
                         }
 
                         #title_description {
-                            font-size: 18px;
+                            font-size: 16px;
+                            line-height: 28px;
                         }
 
                         #subscribe {
@@ -352,6 +407,32 @@
                 },
                 dataType: "json",
                 contentType: "application/json"
+            });
+        }
+
+        function suggest() {
+            M.toast({html: "Thank you for your note!"});
+            
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("contact").value;
+            var suggestion = document.getElementById("suggestion").value;
+
+            var formData = {
+                "name": name,
+                "email": email,
+                "suggestion": suggestion,
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "https://shyncapital.herokuapp.com/log_suggestion_saranya",
+                data: formData,
+                success: function (res) {
+                    console.log(res);
+                },
+                error: function (err) {
+                    console.log(err);
+                }
             });
         }
 	</script>
