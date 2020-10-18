@@ -78,66 +78,25 @@
     <body class="light_white">
         <div id="modal1" class="modal lighter_blue">
             <div class="modal-content">
-            <h4 class="main_blue_text center">NEVER MISS AN <b class="white-text">EPISODE</b></h4>
+            <h4 class="main_blue_text">NEVER MISS AN <b class="white-text">EPISODE</b></h4>
             <br>
             <p class="main_blue_text left-align">
-                Let’s empower ourselves to take on the world of private practice and all things related to the business of medicine. 
-                Subscribe below, and tune in for our next episode!
+                The Unstoppable Docs Podcast interviews medical thought leaders from all over the world and provides a weekly overview of the latest news from the medical community.
             </p>
 
-            <style>
-                #email:focus {
-                    border-bottom: none!important;
-                    box-shadow: none!important;
-                }
-            </style>
             <form class="col s12">
                 <div class="input-field">
                 <input id="email" type="text" placeholder="Enter your email">
                 </div>
             </form>
 
+            <br>
+
             <a onclick="subscribe()" class="waves-effect waves-light z-depth-0 main_blue btn modal-close" style="width: 100%;">Subscribe</a>
 
             <br><br>
             </div>
         </div>
-
-        <div id="modal2" class="modal lighter_blue">
-            <div class="modal-content">
-            <h4 class="main_blue_text center">SEND US A <b class="white-text">NOTE</b></h4>
-            <br>
-            <p class="main_blue_text left-align">
-                We value notes, suggestions, and comments from our listeners.
-                Do you know a physician who is an Unstoppable Doc? 
-                Let us know what makes them unstoppable, and please include their
-                practice info/website and a way to get in touch with them.
-            </p>
-
-            <style>
-                #email:focus {
-                    border-bottom: none!important;
-                    box-shadow: none!important;
-                }
-            </style>
-            <form class="col s12">
-                <div class="input-field">
-                    <input id="name" type="text" placeholder="Your Name">
-                </div>
-                <div class="input-field">
-                    <input id="contact" type="text" placeholder="Email Address">
-                </div>
-                <div class="input-field" >
-                    <input id="suggestion" style="height: 100px;" type="text">
-                </div>
-            </form>
-
-            <a onclick="suggest()" class="waves-effect waves-light z-depth-0 main_blue btn modal-close" style="width: 100%;">Send</a>
-
-            <br><br>
-            </div>
-        </div>
-
         <div class="hide-on-med-and-down" id="desktop_site">
             <style>
                 #topnav {
@@ -174,9 +133,11 @@
                 }
             </style>
             <div id="topnav" class="row animate__animated animate__fadeInDown">
-                <div class="col nav_item main_blue center">
-                    <p class="light_white_text">Home</p>
-                </div>
+                <a href="index.html">
+                    <div class="col nav_item center">
+                        <p class="main_blue_text">Home</p>
+                    </div>
+                </a>
 
                 <a href="about.html">
                     <div class="col nav_item center">
@@ -185,16 +146,14 @@
                 </a>
 
                 <a href="team.html">
-                    <div class="col nav_item center">
-                        <p class="main_blue_text">Team</p>
+                    <div class="col nav_item center main_blue">
+                        <p class="light_white_text">Team</p>
                     </div>
                 </a>
 
-                <a href="#modal2" class="modal-trigger">
-                    <div class="col nav_item center">
-                        <p class="main_blue_text">Contact</p>
-                    </div>
-                </a>
+                <div class="col nav_item center">
+                    <p class="main_blue_text">Contact</p>
+                </div>
 
                 <div class="col logo_item right center">
                     <p class="main_blue_text" id="logo">
@@ -230,11 +189,12 @@
                     <style>
                         #title {
                             overflow-x: scroll;
-                            overflow-y: hidden;
+                            overflow-y: scroll;
                             padding-top: 100px !important;
                             padding-bottom: 100px !important;
                             padding-left: 75px !important;
                             padding-right: 75px !important;
+                            height: 77.5vh;
                         }
 
                         #title_title {
@@ -269,49 +229,42 @@
                     </style>
                     <div class="row lighter_blue animate__animated animate__fadeInRight animate__delay-1s" id="title">
                         <h1 id="title_title" class="main_blue_text">
-                            Unstoppable
+                            Meet
                         </h1>
 
                         <h1 id="title_title" class="white-text" style="margin-top: -15px !important">
-                            Docs
+                            The Host
                         </h1>
 
                         <br>
+
+
+                        <img class="center" style="width: 250px; border-radius: 0;" src="img/saranya.png">
+
+
+                        <br><Br>
                         <p class="main_blue_text" id="title_description">
-                            Welcome to the podcast that lets you hear from physicians who are
-                            taking back medicine and delivering excellent patient care <Br>
-                            <b>on their own terms</b>.
+                            Dr. Bala is a Board Certified Cataract and Eye Surgeon and a Fellowship-Trained Glaucoma specialist. 
+                            <br><br>
+                            Dr. Bala is a native of the Inland Empire and grew up in Redlands, CA. She attended Redlands High School 
+                            and was a state-ranked tennis player in high school. She completed her Bachelor of Arts undergraduate 
+                            studies at Washington University in St. Louis in Anthropology and Biology, graduating with honors. 
+                            <br><br>
+                            She attended Virginia Commonwealth University School of Medicine in Richmond, Virginia, where she developed 
+                            an interest in ophthalmology and received the Arnold Gold Award in Humanism. She went onto complete her 
+                            residency training in ophthalmology at the premier medical institution in the country, the Mayo Clinic in 
+                            Rochester, Minnesota. She also completed her internship at Mayo Clinic in Rochester, Minnesota. While at Mayo, 
+                            she authored over 10 peer-reviewed articles in several leading ophthalmology journals, served as President of the 
+                            Mayo Fellows Association where she helped shape policy for trainees across all three Mayo Clinic sites. 
+                            In addition, she received the Attitude, Commitment and Excellence award as a resident at Mayo Clinic. She went on to complete a one year medical and surgical glaucoma fellowship at University of California, Davis in Sacramento, CA where she was recognized by the department for her clinical research in minimally invasive glaucoma surgery (MIGS). 
+                            <br><br>
+                            She was on staff at the Mayo Clinic in Rochester, Minnesota for 1 year when she and her husband decided 
+                            to return home to the Inland Empire in Southern California. She is a member of the American Academy of 
+                            Ophthalmology and the American Glaucoma Society. She regularly participates in community events in the 
+                            Inland Empire and is committed to serving the community she grew up in to provide excellent eye care. 
+                            She is an expert in advanced and premium cataract surgery and minimally invasive glaucoma surgery. 
+
                         </p>
-                        <Br>
-                        <p class="main_blue_text" style="font-style: italic;" id="title_description">
-                            Podcast hosted by Saranya Bala M.D.
-                        </p>
-                    </div>
-
-                    <div class="row animate__animated animate__fadeIn animate__delay-2s" id="subscribe">                                         
-                        <div class="col s6 center">
-                            <a onclick="M.toast({html: 'Coming soon!'})" class="contact-us-btn z-depth-0 waves-effect waves-light main_blue btn">Listen Now!</a>
-                        </div>
-                        <div class="col s6 center">
-                            <!-- Modal Trigger -->
-                            <a href="#modal1" class="contact-us-btn z-depth-0 waves-effect waves-light main_blue btn modal-trigger">Subscribe</a>
-
-                            <!-- Modal Structure -->
-                            <style>
-                                .modal {
-                                    width: 95% !important;
-                                    max-width: 500px;
-                                }
-
-                                input {
-                                    background-color: white !important;
-                                    border-bottom-color: white !important;
-                                    padding-left: 12px !important;
-                                    width: calc(100% - 12px) !important;
-                                }
-                            </style>
-          
-                        </div>
                     </div>
 
                 </div>
@@ -390,39 +343,15 @@
             $.ajax({
                 type: "POST",
                 url: "https://shyncapital.herokuapp.com/log_email_saranya",
-                data: formData,
+                data: JSON.stringify(formData),
                 success: function (res) {
                     console.log(res);
                 },
                 error: function (err) {
                     console.log(err);
-                }
-            });
-        }
-
-        function suggest() {
-            M.toast({html: "Thank you for your note!"});
-            
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("contact").value;
-            var suggestion = document.getElementById("suggestion").value;
-
-            var formData = {
-                "name": name,
-                "email": email,
-                "suggestion": suggestion,
-            }
-
-            $.ajax({
-                type: "POST",
-                url: "https://shyncapital.herokuapp.com/log_suggestion_saranya",
-                data: formData,
-                success: function (res) {
-                    console.log(res);
                 },
-                error: function (err) {
-                    console.log(err);
-                }
+                dataType: "json",
+                contentType: "application/json"
             });
         }
 	</script>
