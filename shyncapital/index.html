@@ -16,7 +16,7 @@
 
     <!-- Title and Favicon -->
     <title>Gamma Point Capital</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="static/img/favicon.png" type="image/x-icon">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
@@ -24,8 +24,13 @@
         html,
         body {
             scroll-behavior: smooth;
-            background-color: #121c2b;
+            background-color: #152338 /*#121c2b*/;
             font-family: 'Rubik', sans-serif;
+        }
+
+        canvas {
+            position: fixed !important;
+            top: 46px !important;
         }
 
         #large-banner {
@@ -38,7 +43,7 @@
         }
 
         .gold {
-            background-color: #205078 !important;
+            background-color: #b99b5f !important;
         }
 
         .light-white {
@@ -54,7 +59,7 @@
         }
 
         .gold-text {
-            color: #205078 !important;
+            color: #b99b5f !important;
         }
 
         .dark-text {
@@ -178,6 +183,7 @@
 </head>
 
 <body class="large-banner">
+    <div id="particles-js"> 
     <div class="row hide-on-small-only" style="margin-top: 24px;">
         <style>
             .navbar-link {
@@ -194,14 +200,11 @@
                     font-size: 13px;
                     letter-spacing: 0.5px;
                 }
-                .topper:hover {
-                    color: #b4d4ed !important;
-                }
             </style>
             <a href="https://gammapoint.capital" class="topper white-text navbar-link">Welcome</a>
             <a href="about.html" class="topper white-text navbar-link">About</a>
             <a href="team.html" class="topper white-text navbar-link">Team</a>
-            <a href="https://medium.com/@gammapointcapital" target="_blank" class="topper white-text navbar-link">Content</a>
+            <a href="https://medium.com/gamma-point-capital" target="_blank" class="topper white-text navbar-link">Content</a>
             <a href="mailto:sanat@gammapoint.capital" class="topper white-text navbar-link" style="margin-right: 0 !important;">Contact</a>
         </div>
     </div>
@@ -213,8 +216,8 @@
             <!-- <h3 class="white-text animate__animated animate__fadeIn" style="font-family: 'Playfair Display', serif; font-size: 68px">Gamma Point Capital</h3> -->
             <br>
             <p class="grey-text text-lighten-2 animate__animated animate__fadeIn animate__slow" 
-            style="font-size: 17px; font-weight: 100;">
-            Gamma Point Capital is an exclusive investment fund focused on<br> market-neutral strategies that trade digital assets and Web 3.0 technologies.</p>
+            style="font-size: 18px; font-weight: lighter;">
+            Gamma Point Capital is an exclusive investment fund focused on <br>digital assets and Web 3.0 technologies.</p>
         </div>
     </div>
 
@@ -231,7 +234,7 @@
             <a href="https://gammapoint.capital" class="white-text">Welcome</a><br><br>
             <a href="about.html" class="white-text">About</a><br><br>
             <a href="team.html" class="white-text">Team</a><br><br>
-            <a href="https://medium.com/@gammapointcapital" target="_blank" class="white-text">Content</a><br><br>
+            <a href="https://medium.com/gamma-point-capital" target="_blank" class="white-text">Content</a><br><br>
             <a href="mailto:sanat@gammapoint.capital" class="white-text" style="margin-right: 0 !important;">Contact</a><br>
         </div>
     </div>
@@ -239,33 +242,33 @@
     <div class="row hide-on-small-only">
         <style>
             .btn-floating {
-                margin-right: 24px;
-            }
-
-            .btn-floating:hover {
-                background-color: #afd5f1 !important;
+                margin-right: 12px;
+                background-color: white;
             }
         </style>
         <div class="col s12 center" style="position: absolute; bottom: 30px; float: center;">
-            <a href="https://twitter.com/sanatvc" class="btn-floating gold">
-                <i class="fab fa-twitter"></i>
+            <a href="https://twitter.com/sanatvc" class="btn-floating">
+                <i class="fab fa-twitter grey-text text-darken-4"></i>
             </a>
-            <a href="mailto:sanat@gammapoint.capital" class="btn-floating gold">
-                <i class="far fa-envelope"></i>
+            <a href="mailto:sanat@gammapoint.capital" class="btn-floating">
+                <i class="far fa-envelope grey-text text-darken-4"></i>
             </a>
-            <a href="https://medium.com/@gammapointcapital" class="btn-floating gold">
-                <i class="fab fa-medium"></i>
+            <a href="https://medium.com/gamma-point-capital" class="btn-floating">
+                <i class="fab fa-medium grey-text text-darken-4"></i>
             </a>
-            <a href="mailto:sanat@gammapoint.capital" class="btn-floating gold">
-                <i class="fab fa-linkedin"></i>
+            <a href="mailto:sanat@gammapoint.capital" class="btn-floating">
+                <i class="fab fa-linkedin grey-text text-darken-4"></i>
             </a>
         </div>
     </div>
-
+</div>
+ 
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./static/js/particles.js-master/particles.min.js"></script>
+    <script src="./static/js/particles.js-master/demo/js/app.js"></script>
 
     <script type="text/javascript">
         new WOW().init();

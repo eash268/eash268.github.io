@@ -31,6 +31,10 @@
                 overflow-x: hidden;
             }
 
+            .btn {
+                border-radius: 100px !important;
+            }
+
             .container,
             .row,
             .col,
@@ -54,11 +58,11 @@
             }
 
             .lighter_blue {
-                background-color: #d8e4f1 !important;
+                background-color: #c5d7ea !important;
             }
 
             .lighter_blue_text {
-                color: #d8e4f1 !important;
+                color: #c5d7ea !important;
             }
 
             .light_white {
@@ -153,7 +157,7 @@
                 }
 
                 .nav_item:hover {
-                    background-color: #d8e4f1;
+                    background-color: #c5d7ea;
                     cursor: pointer !important;
                 }
 
@@ -195,18 +199,18 @@
                     </div>
                 </a>
 
-                <div class="col logo_item right center" style="padding-top: 2.2vh !important;">
-                    <!-- <p class="main_blue_text" id="logo">
+                <div class="col logo_item right center" style="padding-top: 4vh !important;">
+                    <p class="main_blue_text" id="logo">
                         <b>Unstoppable<font class="lighter_blue_text">Docs</font></b>
-                    </p> -->
-                    <img style="height: 8vh;" src="./img/unstoppable_docs_logo.png">
+                    </p>
+                    <!-- <img style="height: 8vh;" src="./img/unstoppable_docs_logo.png"> -->
                 </div>
             </div>
 
             <style>
                 #main {
                     height: 77.5vh;
-                    background: url("./img/bg3.jpg") center top no-repeat; 
+                    background: url("./img/bg5.png") center top no-repeat; 
                     position: center;
                     background-size: cover;
                     background-color: #fefefe;
@@ -231,8 +235,8 @@
                         #title {
                             overflow-x: scroll;
                             overflow-y: hidden;
-                            padding-top: 100px !important;
-                            padding-bottom: 100px !important;
+                            padding-top: 75px !important;
+                            padding-bottom: 75px !important;
                             padding-left: 75px !important;
                             padding-right: 75px !important;
                         }
@@ -267,34 +271,36 @@
                             /* font-family: 'Rubik', sans-serif; */
                         }
                     </style>
-                    <div class="row lighter_blue animate__animated animate__fadeInRight animate__delay-1s" id="title">
-                        <h1 id="title_title" class="main_blue_text">
+                    <div class="row lighter_blue animate__animated animate__fadeInRight animate__delay-1s center" id="title">
+                        <!-- <h1 id="title_title" class="main_blue_text">
                             Unstoppable
                         </h1>
 
                         <h1 id="title_title" class="white-text" style="margin-top: -15px !important">
                             Docs
-                        </h1>
+                        </h1> -->
+
+                        <img class="center" style="height: 25vh; margin-bottom: 30px;" src="./img/unstoppable_docs_logo.png">
 
                         <br>
-                        <p class="main_blue_text" id="title_description">
+                        <p class="main_blue_text left-align" id="title_description">
                             Welcome to the podcast that lets you hear from physicians who are
                             taking back medicine and delivering excellent patient care <Br>
                             <b>on their own terms</b>.
                         </p>
                         <Br>
-                        <p class="main_blue_text" style="font-style: italic;" id="title_description">
+                        <p class="main_blue_text left-align" style="font-style: italic;" id="title_description">
                             Podcast hosted by Saranya Bala M.D.
                         </p>
                     </div>
 
                     <div class="row animate__animated animate__fadeIn animate__delay-2s" id="subscribe">                                         
                         <div class="col s6 center">
-                            <a onclick="M.toast({html: 'Coming soon!'})" class="contact-us-btn z-depth-0 waves-effect waves-light main_blue btn">Listen Now!</a>
+                            <a style="border-radius: 25px !important;" onclick="M.toast({html: 'Coming soon!'})" class="contact-us-btn z-depth-0 waves-effect waves-light main_blue btn">Listen Now!</a>
                         </div>
                         <div class="col s6 center">
                             <!-- Modal Trigger -->
-                            <a href="#modal1" class="contact-us-btn z-depth-0 waves-effect waves-light main_blue btn modal-trigger">Subscribe</a>
+                            <a style="border-radius: 25px !important;" href="#modal1" class="contact-us-btn z-depth-0 waves-effect waves-light main_blue btn modal-trigger">Subscribe</a>
 
                             <!-- Modal Structure -->
                             <style>
@@ -342,19 +348,13 @@
         <style>
             #mobile_site {
                 height: 100vh;
-                background-color: #d8e4f1;
+                background-color: #c5d7ea;
                 padding-top: 30vh;
             }
         </style>
         <div class="hide-on-large-only" id="mobile_site">
             <div class="row center">
-                <h1 class="main_blue_text">
-                    Unstoppable
-                </h1>
-
-                <h1 class="white-text">
-                    Docs
-                </h1>
+                <img class="center" style="height: 20vh; margin-bottom: 30px;" src="./img/unstoppable_docs_logo.png">
             </div>
             <div class="row center" style="margin-top: 40px !important;">
                 <a onclick="M.toast({html: 'Coming soon!'})" class="contact-us-btn z-depth-0 waves-effect waves-light main_blue btn">Listen Now!</a>
