@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <!-- Required OGP Tags -->
+    <meta property="og:title" content="Gamma Point Capital" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shyn.capital" />
+    <meta property="og:image" content="img/ShynCapitalLogoPreview.png" />
+
+    <!-- Title and Favicon -->
+    <title>Gamma Point Capital</title>
+    <link rel="shortcut icon" href="static/img/favicon.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <style>
+        canvas {
+            position: fixed !important;
+            top: 0px !important;
+        }
+
+        #large-banner {
+            background: url("img/bg_compressed.png") center top no-repeat;
+            position: center;
+            background-size: cover;
+            /* background-color: #223555; */
+            background-color: #43536e !important;
+            background-repeat: no-repeat;
+        }
+
+        .gold {
+            background-color: #b99b5f !important;
+        }
+
+        .light-white {
+            background-color: #fafafa !important;
+        }
+
+        .light-grey {
+            background-color: #f4f4f4 !important;
+        }
+
+        .light-grey-text {
+            color: #b8bbc1 !important;
+        }
+
+        .gold-text {
+            color: #b99b5f !important;
+        }
+
+        .dark-text {
+            color: #272938 !important;
+        }
+
+        .paragraph-text {
+            color: #4d4a5b !important;
+        }
+
+        .row,
+        .col,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        #large-banner {
+            height: 110vh;
+
+            padding-top: 48px;
+            padding-bottom: 48px;
+
+            background: url("img/bg_compressed.png") center top no-repeat;
+            position: center;
+            background-size: cover;
+            /* background-color: #223555; */
+            background-color: #43536e;
+            background-repeat: no-repeat;
+        }
+
+        #small-banner {
+            height: 85vh;
+
+            padding-top: 24px;
+            padding-bottom: 24px;
+
+            background: url("img/bg_compressed.png") center top no-repeat;
+            position: center;
+            background-size: cover;
+            /* background-color: #223555; */
+            background-color: #43536e;
+            background-repeat: no-repeat;
+        }
+
+        #about-us,
+        #learn-more,
+        #education,
+        #partnerships,
+        #our-team {
+            padding-top: 96px;
+            padding-bottom: 96px;
+        }
+
+        #large-tabs {
+            padding-top: 96px;
+            padding-bottom: 96px;
+
+            background: url("img/bg_compressed.png") center top no-repeat;
+            position: center;
+            background-size: cover;
+            /* background-color: #223555; */
+            background-color: #43536e;
+            background-repeat: no-repeat;
+        }
+
+        .contact-us-btn {
+            font-size: 16px;
+            line-height: 42px;
+            height: 45px;
+            margin-top: 12px;
+            margin-bottom: 44.5px;
+            border-radius: 0px !important;
+            text-transform: capitalize !important;
+            padding-left: 25px;
+            padding-right: 25px;
+            /* font-family: 'Playfair Display', serif; */
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .small-header {
+            margin: 0 0 36px 0;
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+        }
+    </style>
+
+    <!-- Fonts and Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162463409-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-162463409-2');
+    </script>
+
+</head>
+
+<body class="large-banner">
+    <div id="particles-js"></div>
+        <div class="card panel">
+
+            <div class="row" style="margin-top: 0">
+                <div class="col s12 center" style="margin-top: 0">
+                    <a href="./">
+                        <img 
+                            class="animate__animated animate__fadeIn" 
+                            style="filter: brightness(15%)" 
+                            src="./static/img/GPC5.png" 
+                            width="100%">
+                    </a>
+                </div>
+            </div>
+        
+            <div style="max-height: 70vh; overflow-y: scroll;">
+
+                <div class="row">
+                    <div class="col l12 center">
+                        <div class="row" style="padding-top: 12px; padding-bottom: 12px;">
+                            <div class="col m6 s12">
+                                <img src="static/img/sanat.jpg" style="width: 100%; border-radius: 10px;">
+                            </div>
+                            <div class="col m6 s12 left-align">
+                                <p target="_blank" style="font-size: 24px; text-transform: uppercase;">Sanat Rao.</p>
+                                <p style="margin-top: 3px;">
+                                    <a href="https://www.linkedin.com/in/sanatrao" target="_blank" class="left" style="font-size: 16px;">
+                                        <i class="fab fa-linkedin"></i>
+                                        LinkedIn.
+                                    </a
+                                    >
+                                </p> &nbsp;
+                                <p>
+                                    <a href="https://www.linkedin.com/in/sanatrao" target="_blank" class="left" style="font-size: 16px;">
+                                        <i class="fab fa-linkedin"></i>
+                                        Twitter.
+                                    </a
+                                    >
+                                </p> &nbsp;
+                                <p>
+                                    <a href="https://www.linkedin.com/in/sanatrao" target="_blank" class="left" style="font-size: 16px;">
+                                        <i class="fab fa-linkedin"></i>
+                                        Email.
+                                    </a
+                                    >
+                                </p> &nbsp;
+                            </div>
+                            <div class="col s12">
+                                <p class="teamdesc left-align grey-text text-darken-2" style="font-size: 16px; font-weight: normal;">
+                                    Sanat is the founder and managing partner of Gamma Point Capital. 
+                                    He was previously a partner at IDG Ventures India focused on investments 
+                                    in fintech and frontier tech. Sanat held earlier roles at Intel Capital and 
+                                    iSPIRT on the investment and M&A teams. He is a visiting faculty at Stanford 
+                                    GSB and the Duke Fuqua School of Business.
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col l12 center">
+                        <div class="row" style="padding-top: 12px; padding-bottom: 12px;">
+                            <div class="col m6 s12">
+                                <img src="static/img/Rahul.jpeg" style="width: 100%; border-radius: 10px;">
+                            </div>
+                            <div class="col m6 s12 left-align">
+                                <p target="_blank" style="font-size: 24px; text-transform: uppercase;">Rahul Rai.</p>
+                                <p style="margin-top: 3px;">
+                                    <a href="https://www.linkedin.com/in/sanatrao" target="_blank" class="left" style="font-size: 16px;">
+                                        <i class="fab fa-linkedin"></i>
+                                        LinkedIn.
+                                    </a
+                                    >
+                                </p> &nbsp;
+                                <p>
+                                    <a href="https://www.linkedin.com/in/sanatrao" target="_blank" class="left" style="font-size: 16px;">
+                                        <i class="fab fa-linkedin"></i>
+                                        Twitter.
+                                    </a
+                                    >
+                                </p> &nbsp;
+                                <p>
+                                    <a href="https://www.linkedin.com/in/sanatrao" target="_blank" class="left" style="font-size: 16px;">
+                                        <i class="fab fa-linkedin"></i>
+                                        Email.
+                                    </a
+                                    >
+                                </p> &nbsp;
+                            </div>
+                            <div class="col s12">
+                                <p class="teamdesc left-align grey-text text-darken-2" style="font-size: 16px; font-weight: normal;">
+                                    Rahul is co-founder and Managing Partner at Gamma Point Capital. He previously worked on the FX 
+                                    Hedge Funds team at Morgan Stanley, and is passionate about the intersection of finance, crypto 
+                                    and tech. He holds a B.S in Economics from the Wharton School at the University of Pennsylvania.
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col l12 center">
+                        <div class="row" style="padding-top: 12px; padding-bottom: 12px;">
+                            <div class="col m6 s12">
+                                <img src="static/img/eash.jpg" style="width: 100%; border-radius: 10px;">
+                            </div>
+                            <div class="col m6 s12 left-align">
+                                <p target="_blank" style="font-size: 24px; text-transform: uppercase;">Eash Aggarwal.</p>
+                                <p style="margin-top: 3px;">
+                                    <a href="https://www.linkedin.com/in/sanatrao" target="_blank" class="left" style="font-size: 16px;">
+                                        <i class="fab fa-linkedin"></i>
+                                        LinkedIn.
+                                    </a
+                                    >
+                                </p> &nbsp;
+                                <p>
+                                    <a href="https://www.linkedin.com/in/sanatrao" target="_blank" class="left" style="font-size: 16px;">
+                                        <i class="fab fa-linkedin"></i>
+                                        Twitter.
+                                    </a
+                                    >
+                                </p> &nbsp;
+                                <p>
+                                    <a href="https://www.linkedin.com/in/sanatrao" target="_blank" class="left" style="font-size: 16px;">
+                                        <i class="fab fa-linkedin"></i>
+                                        Email.
+                                    </a
+                                    >
+                                </p> &nbsp;
+                            </div>
+                            <div class="col s12">
+                                <p class="teamdesc left-align grey-text text-darken-2" style="font-size: 16px; font-weight: normal;">
+                                    Eash studies Artificial Intelligence at Penn. Prior to co-founding Gamma Point, 
+                                    he worked at J.P. Morgan, BCG Gamma, and NeuroFlow. His research in quantitative neuroscience 
+                                    has been featured in reputed publications. He is currently focused on applying sophisticated tech 
+                                    and math to cutting-edge markets.
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+        
+               
+
+            <div class="row" style="margin-top: 2.5vh;">
+                <style>
+                    .chip {
+                        /* border: 1px solid #2196f3 !important; */
+                        border: 1px solid black !important;
+                        /* color: #2196f3 !important; */
+                        color: black !important;
+                    }
+                </style>
+                <div class="col s12 center">
+                    <a href="index.html">
+                        <div class="chip transparent pointer">
+                            ⬅
+                        </div>
+                    </a>
+                    <a href="new_about.html">
+                        <div class="chip transparent pointer">
+                            About Us.
+                        </div>
+                    </a>
+                    <a href="new_team.html">
+                        <div class="chip transparent pointer z-depth-2">
+                            Our Team.
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://medium.com/gamma-point-capital">
+                        <div class="chip transparent pointer">
+                            Featured Thinking.
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 8vh;">
+                <div class="col s12 center">
+                    <a target="_blank" href="https://twitter.com/sanatvc" class="btn-floating gold">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="mailto:sanat@gammapoint.capital" class="btn-floating gold">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a target="_blank" href="https://medium.com/gamma-point-capital" class="btn-floating gold">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                    <a target="_blank" href="mailto:sanat@gammapoint.capital" class="btn-floating gold">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row center" style="margin-top: 3vh;">
+                <p class="grey-text animate__animated animate__fadeIn animate__slow" 
+                    style="font-size: 12px; font-weight: normal;">
+                    ©2020 Gamma Point Capital, LLC. All rights reserved.</p>
+            </div>
+        </div>
+    <!-- </div> -->
+ 
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./static/js/particles.js-master/particles.min.js"></script>
+    <script src="./static/js/particles.js-master/demo/js/app.js"></script>
+
+    <script type="text/javascript">
+        new WOW().init();
+        $(document).ready(function () {
+            $('.tabs').tabs();
+        });
+
+        function pronounceShynCapital() {
+            var audio = new Audio('img/ShynCapital.mp3');
+            audio.play();
+        }
+    </script>
+</body>
+
+</html>
