@@ -1,0 +1,122 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    overflow-y: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Domine', serif;
+}
+
+p, li {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px !important;
+	font-weight: 400;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.responsive-img {
+	width: 100%;
+	max-height: 300px;
+	object-fit: cover;
+	object-position: top;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.crease-right {
+	border-right: 1px solid #E5E5E5;
+}
+
+.crease-bottom {
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.click-shrink { 
+	transition: all .1s ease-in-out; 
+}
+
+.click-shrink:active { 
+	transform: scale(0.9); 
+}
+
+.expectations {
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: lighter;
+}
+
+.no-border {
+	border: 1px solid #64b5f6 !important;
+}
+
+.section {
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: lighter;
+	font-size: 16px;
+	margin-top: 10px;
+	border: 1px solid white;
+	color: white;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.skill {
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: lighter;
+	font-size: 14px;
+	margin-top: 10px;
+	border: 1px solid white;
+	color: black;
+	background-color: white;
+}
+
+.secondary-text {
+	color: #BC3F00 !important;
+}
+
+.story {
+	font-weight: 300;
+}
+
+.caption {
+	font-size: 9px;
+	font-weight: 300;
+}
+
+.story_block {
+	height: 100vh;
+	overflow-y: scroll !important;
+}
+
+#greeting {
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: lighter;
+	margin-top: 35vh;
+}
+
+#left_section {
+	background: url("../img/eash22.png") center top no-repeat; 
+	position: center;
+	background-size: contain;
+	background-color: #223D58;
+	/*background-color: #001f3f;*/
+	background-repeat: no-repeat;
+}
+
+#section_title {
+	text-transform: uppercase;
+}
+
+#story_title {
+	margin-top: 10px;
+	margin-bottom: 16px;
+}
+
+#top_right_menu_icon {
+	margin-top: 10.875px;
+}
