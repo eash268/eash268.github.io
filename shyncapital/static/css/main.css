@@ -1,11 +1,11 @@
 html,
 body {
     scroll-behavior: smooth;
-    background-color: #152338 /*#121c2b*/;
+    background-color: #08274A /*#121c2b*/;
     font-family: 'Rubik', sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: linear-gradient(to bottom right, #152338, #08274A);
+    background-image: linear-gradient(to bottom right, #152338, #152338);
 }
 
 /* body {

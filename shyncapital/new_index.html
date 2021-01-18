@@ -22,11 +22,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" href="static/css/main.css">
     <style>
-        html,
-        body {
-            scroll-behavior: smooth;
-            background-color: #152338 /*#121c2b*/;
-            /* font-family: 'Rukic', sans-serif; */
+        canvas {
+            position: fixed !important;
+            top: 0px !important;
         }
 
         #large-banner {
@@ -179,86 +177,111 @@
 </head>
 
 <body class="large-banner">
-    <div class="row hide-on-small-only" style="margin-top: 24px;">
-        <style>
-            .navbar-link {
-                text-transform: uppercase;
-                font-family: 'Rubik', sans-serif;
-                font-size: 14px;
-                margin-right: 96px;
+    <div id="particles-js"></div>
+        <div class="card panel">
+            <div class="row" style="margin-top: 24px;">
+                <style>
+                    .navbar-link {
+                        text-transform: uppercase;
+                        font-family: 'Rubik', sans-serif;
+                        font-size: 14px;
+                        margin-right: 96px;
 
-            }
-        </style>
-        <div class="col s12 center">
-            <style>
-                .topper {
-                    font-size: 13px;
-                    letter-spacing: 0.5px;
-                }
-            </style>
-            <a href="https://gammapoint.capital" class="topper white-text navbar-link">Welcome</a>
-            <a href="about.html" class="topper white-text navbar-link">About</a>
-            <a href="team.html" class="topper white-text navbar-link">Team</a>
-            <a href="content.html" class="topper white-text navbar-link">Content</a>
-            <a href="mailto:sanat@gammapoint.capital" class="topper white-text navbar-link" style="margin-right: 0 !important;">Contact</a>
+                    }
+                </style>
+                <div class="col s12 center">
+                    <style>
+                        .topper {
+                            font-size: 13px;
+                            letter-spacing: 0.5px;
+                        }
+                    </style>
+                    <!-- <a href="https://gammapoint.capital" class="topper white-text navbar-link">Welcome</a>
+                    <a href="about.html" class="topper white-text navbar-link">About</a>
+                    <a href="team.html" class="topper white-text navbar-link">Team</a>
+                    <a href="https://medium.com/gamma-point-capital" target="_blank" class="topper white-text navbar-link">Content</a>
+                    <a href="mailto:sanat@gammapoint.capital" class="topper white-text navbar-link" style="margin-right: 0 !important;">Contact</a> -->
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 0">
+                <div class="col s12 center" style="margin-top: 0">
+                    <img 
+                        class="animate__animated animate__fadeIn" 
+                        style="filter: brightness(15%)" 
+                        src="./static/img/GPC3.png" 
+                        width="100%">
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 4vh;">
+                <div class="col s12 center">
+                    <!-- <h3 class="white-text animate__animated animate__fadeIn" style="font-family: 'Playfair Display', serif; font-size: 68px">Gamma Point Capital</h3> -->
+                    <p class="grey-text text-darken-2 animate__animated animate__fadeIn animate__slow" 
+                    style="font-size: 18px; font-weight: normal;">
+                    Gamma Point Capital is an exclusive investment fund focused on digital assets and Web 3.0 technologies.</p>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 2.5vh;">
+                <style>
+                    .chip {
+                        /* border: 1px solid #2196f3 !important; */
+                        border: 1px solid black !important;
+                        /* color: #2196f3 !important; */
+                        color: black !important;
+                    }
+                </style>
+                <div class="col s12 center">
+                    <a href="new_about.html">
+                        <div class="chip transparent pointer">
+                            About Us.
+                        </div>
+                    </a>
+                    <a href="new_team.html">
+                        <div class="chip transparent pointer">
+                            Our Team.
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://medium.com/gamma-point-capital">
+                        <div class="chip transparent pointer">
+                            Featured Thinking.
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 8vh;">
+                <div class="col s12 center">
+                    <a target="_blank" href="https://twitter.com/GammaPoint_" class="btn-floating gold">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="mailto:sanat@gammapoint.capital" class="btn-floating gold">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a target="_blank" href="https://medium.com/gamma-point-capital" class="btn-floating gold">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                    <a target="_blank" href="mailto:sanat@gammapoint.capital" class="btn-floating gold">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row center" style="margin-top: 3vh;">
+                <p class="grey-text animate__animated animate__fadeIn animate__slow" 
+                    style="font-size: 12px; font-weight: lighter;">
+                    ©2020 Gamma Point Capital, LLC. All rights reserved.</p>
+            </div>
         </div>
-    </div>
-
-    <div class="row hide-on-small-only" style="margin-top: 30vh;">
-        <div class="col s12 center">
-            <!-- <img class="animate__animated animate__fadeIn" src="./static/img/GPCLogo2021.png" width="250px"><br> -->
-            <img class="animate__animated animate__fadeIn" src="./static/img/GPC3.png" width="550px">
-            <br><br><br>
-            <!-- <h3 class="white-text animate__animated animate__fadeIn" style="font-family: 'Playfair Display', serif; font-size: 68px">Gamma Point Capital</h3> -->
-            <br>
-            <p class="grey-text text-lighten-2 animate__animated animate__fadeIn animate__slow" 
-            style="font-size: 18px; font-weight: lighter;">
-            Gamma Point Capital is an exclusive investment fund focused on <br>digital assets and Web 3.0 technologies.</p>
-        </div>
-    </div>
-
-    <div class="row hide-on-med-and-up" style="margin-top: 15vh;">
-        <div class="col l12 center">
-            <img class="animate__animated animate__fadeIn" src="./static/img/GPC3.png" width="100%">
-            <br><br><br>
-            <p 
-                class="grey-text text-lighten-2 animate__animated animate__fadeIn animate__slow" 
-                style="font-size: 18px; font-weight: 100;">
-                We are an exclusive fund investing in digital assets and Web 3.0 technologies.
-            </p>
-            <br><br>
-            <a href="https://gammapoint.capital" class="white-text">Welcome</a><br><br>
-            <a href="about.html" class="white-text">About</a><br><br>
-            <a href="team.html" class="white-text">Team</a><br><br>
-            <a href="content.html" target="_blank" class="white-text">Content</a><br><br>
-            <a href="mailto:sanat@gammapoint.capital" class="white-text" style="margin-right: 0 !important;">Contact</a><br>
-        </div>
-    </div>
-
-    <div class="row hide-on-small-only">
-        <style>
-            .btn-floating {
-                margin-right: 12px;
-                background-color: white;
-            }
-        </style>
-        <div class="col s12 center" style="position: absolute; bottom: 30px; float: center;">
-            <a href="https://twitter.com/sanatvc" class="btn-floating white">
-                <i class="fab fa-twitter grey-text text-darken-4"></i>
-            </a>
-            <a href="https://medium.com/gamma-point-capital" class="btn-floating white">
-                <i class="fab fa-medium grey-text text-darken-4"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/14586752" class="btn-floating white">
-                <i class="fab fa-linkedin grey-text text-darken-4"></i>
-            </a>
-        </div>
-    </div>
-
+    <!-- </div> -->
+ 
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./static/js/particles.js-master/particles.js"></script>
+    <script src="./static/js/particles.js-master/demo/js/app.js"></script>
 
     <script type="text/javascript">
         new WOW().init();

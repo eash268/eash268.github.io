@@ -95,3 +95,31 @@ $('#demo_submit').click(function() {
 		}, 5000);
 	}
 });
+
+clear();
+var search_terms = ["Iacoboni", "anterior cingulate cortex", "anterior cortex", "anterior cingulate", "gatekeeping", "distributive justice", "medicalization", "tms", "tdcs", "NeuroDiversity", "Brain Training Games", "Meditation", "SSRI", "Noninvasive Brain Stimulation", "Brain Stimulation", "Adderall", "IAT"]
+var array = window.__data__.transcriptList;
+var results = {}
+
+for (let index = 0; index < array.length; index++) {
+	const element = array[index];
+	const text = element["text"];
+
+	for (let index = 0; index < search_terms.length; index++) {
+		const term = search_terms[index];
+		if (text.toUpperCase().includes(term.toUpperCase())) {
+			const ts = element["ts"];
+			console.log(term + " at " + ts);
+
+			var data = {};
+			data["text"] = text;
+			data["ts"] = ts;
+
+			if (results[term] == undefined) {
+				results[term] = []
+			}
+			results[term].push(data);
+		}
+	}
+}
+results
