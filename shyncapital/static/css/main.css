@@ -1,8 +1,8 @@
 html,
 body {
     scroll-behavior: smooth;
-    background-color: #08274A /*#121c2b*/;
     font-family: 'Rubik', sans-serif;
+    background-color: #08274A /*#121c2b*/;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: linear-gradient(to bottom right, #152338, #152338);

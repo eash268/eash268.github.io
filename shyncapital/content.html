@@ -19,14 +19,22 @@
     <link rel="shortcut icon" href="static/img/favicon.png" type="image/x-icon">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="static/css/main.css">
     <style>
-        html, body {
+        html,
+        body {
             scroll-behavior: smooth;
-            background-color: #152338 !important;
-            font-family: 'Rubik', sans-serif;
-        } 
+            background-color: #152338
+                /*#121c2b*/
+            ;
+            /* font-family: 'Rukic', sans-serif; */
+        }
+
+        .bluetext {
+            color: #224e73 !important;
+        }
 
         #large-banner {
             background: url("img/bg_compressed.png") center top no-repeat;
@@ -178,109 +186,171 @@
 </head>
 
 <body class="large-banner">
-    <div class="row hide-on-small-only" style="margin-top: 24px;">
-        <style>
-            .navbar-link {
-                text-transform: uppercase;
-                font-family: 'Rubik', sans-serif;
-                font-size: 14px;
-                margin-right: 96px;
-
-            }
-        </style>
-        <div class="col s12 center">
-            <a href="https://gammapoint.capital" class="topper white-text navbar-link">Welcome</a>
-            <a href="about.html" class="topper white-text navbar-link">About</a>
-            <a href="team.html" class="topper white-text navbar-link">Team</a>
-            <a href="content.html" class="topper white-text navbar-link">Content</a>
-            <a href="mailto:sanat@gammapoint.capital" class="topper white-text navbar-link"
-                style="margin-right: 0 !important;">Contact</a>
+    <nav class="z-depth-0" style="background-color: #152338;">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">
+                <img src="./static/img/GPCLogo2021White.png" style="width: 60px; padding: 16px 15px;">
+            </a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a style="font-family: 'Rubik', sans-serif;" href="https://gammapoint.capital">Home</a></li>
+                <li><a style="font-family: 'Rubik', sans-serif;" href="about.html">About</a></li>
+                <li><a style="font-family: 'Rubik', sans-serif;" href="team.html">Team</a></li>
+                <li style="background-color: #224e73;"><a style="font-family: 'Rubik', sans-serif;" href="content.html">Content</a></li>
+                <li><a style="font-family: 'Rubik', sans-serif;" href="mailto:sanat@gammapoint.capital">Contact</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a style="font-family: 'Rubik', sans-serif;" href="https://gammapoint.capital">Home</a></li>
+                <li><a style="font-family: 'Rubik', sans-serif;" href="about.html">About</a></li>
+                <li><a style="font-family: 'Rubik', sans-serif;" href="team.html">Team</a></li>
+                <li style="background-color: #224e73;"><a style="font-family: 'Rubik', sans-serif;" href="content.html">Content</a></li>
+                <li><a style="font-family: 'Rubik', sans-serif;" href="mailto:sanat@gammapoint.capital">Contact</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
 
+
+
+
+
+
+
+
+
+    <!--  -->
     <div class="row" style="margin-top: 12vh;">
         <div class="col s12 center">
-            <a href="https://gammapoint.capital">
-                <i class="material-icons white-text hide-on-med-and-up"
-                    style="position: absolute; top: 10px; left: 0; font-size: 48px;">arrow_left</i>
-            </a>
 
 
             <h3 class="white-text animate__animated animate__fadeIn"
                 style="font-family: 'Rubik', serif; font-size: 68px">Featured Thinking</h3>
             <br><br>
             <div class="col xl8 push-xl2 s12">
-                <div class="row" style="max-height: 50vh; overflow-y: scroll;">
+                <div class="row" style="max-height: 1000vh; overflow-y: scroll;">
 
-                    <div class="col s12 m6">
+                    <div class="col s12 m12" style="margin-bottom: 20px; padding: 0px 30px;">
                         <div class="card small">
                             <div class="card-image">
-                                <img src="https://miro.medium.com/max/1200/1*zrdpeVEXGZJkaFX7u2oDMg.jpeg" style="filter: brightness(40%) !important;">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstatic1.businessinsider.com%2Fimage%2F5942a57d50466bfa238b469f-2400%2Fshutterstock557364895.jpg&f=1&nofb=1" style="filter: brightness(30%) !important;">
+                                <span class="card-title left-align">Fixed Income Protocols - The Next Wave of DeFi Innovation</span>
+                            </div>
+                            <div class="card-content left-align">
+                                <p class="grey-text text-darken-2">
+                                    This article is a guest post from the Messari community. Rahul is currently Managing Partner at Gamma Point Capital, a hedge fund focused on digital assets and Decentralized Finance. He was previously on the FX Hedge Funds team at Morgan Stanley, and graduated with a B.S in Economics from the Wharton School.
+                                </p>
+                            </div>
+                            <div class="card-action left-align">
+                                <a target="_blank" class="blue-text right" href="https://messari.io/article/fixed-income-protocols-the-next-wave-of-defi-innovation">
+                                    Read Full Article
+                                    <i class="material-icons right">arrow_right</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m12" style="margin-bottom: 20px; padding: 0px 30px;">
+                        <div class="card small">
+                            <div class="card-image">
+                                <img src="https://miro.medium.com/max/1200/1*zrdpeVEXGZJkaFX7u2oDMg.jpeg" style="filter: brightness(30%) !important;">
                                 <span class="card-title left-align">2020 Crypto Review and 2021 Predictions</span>
                             </div>
                             <div class="card-content left-align">
-                                <p class="grey-text text-darken-4">
+                                <p class="grey-text text-darken-2">
                                     2020 was truly a momentous year — the Covid19 pandemic changed how we live, work and travel; the economic shock and resulting K-shaped recovery heightened the divide between the elite and the working class, and a contentious election highlighted the deep fissures in our society.
                                 </p>
                             </div>
                             <div class="card-action left-align">
-                                <a target="_blank" class="blue-text" href="https://medium.com/gamma-point-capital/2020-crypto-year-in-review-and-2021-predictions-da91d16daded">Read Full Article</a>
+                                <a target="_blank" class="blue-text right" href="https://medium.com/gamma-point-capital/2020-crypto-year-in-review-and-2021-predictions-da91d16daded">
+                                    Read Full Article
+                                    <i class="material-icons right">arrow_right</i>
+                                </a>
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="col s12 m6">
+                    <div class="col s12 m12" style="margin-bottom: 20px; padding: 0px 30px;">
                         <div class="card small">
                             <div class="card-image">
-                                <img src="https://miro.medium.com/max/2000/0*OmvShyizxIFSqy5N" style="filter: brightness(40%) !important;">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F4400%2F1*NKr0LSukVbfNDejmKldVBQ.png&f=1&nofb=1" style="filter: brightness(30%) !important;">
                                 <span class="card-title left-align">The Algorithmic Stablecoin Game — Empty Set Døllar</span>
                             </div>
                             <div class="card-content left-align">
-                                <p class="grey-text text-darken-4">
+                                <p class="grey-text text-darken-2">
                                     Stablecoins are cryptocurrencies that are designed to track the value of a “stable” asset (eg. 1 USD) or a basket of assets. The high volatility of traditional crypto assets makes them a poor unit of account and store of value, and is one of the main factors limiting their mass adoption. Stablecoins solve this problem, and enable market participants to hold their assets in USD, instead of more volatile cryptocurrencies.
                                 </p>
                             </div>
                             <div class="card-action left-align">
-                                <a target="_blank" class="blue-text" href="https://medium.com/gamma-point-capital/the-algorithmic-stablecoin-game-empty-set-d%C3%B8llar-81e900b9aafb">Read Full Article</a>
+                                <a target="_blank" class="blue-text right" href="https://medium.com/gamma-point-capital/the-algorithmic-stablecoin-game-empty-set-d%C3%B8llar-fd19eacee606">
+                                    Read Full Article
+                                    <i class="material-icons right">arrow_right</i>
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col s12 m6">
+                    <div class="col s12 m12" style="margin-bottom: 20px; padding: 0px 30px;">
                         <div class="card small">
                             <div class="card-image">
-                                <img src="https://miro.medium.com/max/2000/0*g76BIvOSwxqZDnOm" style="filter: brightness(40%) !important;">
+                                <img src="https://miro.medium.com/max/2000/0*pbQnVctX4UGYEVkp" style="filter: brightness(30%) !important;">
+                                <span class="card-title left-align">
+                                    The Hitchhiker’s Guide to DeFi (Part II) — DEXs & AMMs
+                                </span>
+                            </div>
+                            <div class="card-content left-align">
+                                <p class="grey-text text-darken-2">
+                                    In our previous piece, we covered lending & borrowing protocols, the building blocks of DeFi. In this post we’ll we’ll dive into Decentralized Exchanges (DEXs). DEXs are peer-to-peer (p2p) electronic markets that are built on the blockchain, and that utilize Automated Market Maker (AMM) protocols to provide continuous liquidity with minimal slippage. We’ll highlight the three main types of DEXs, and highlight the underlying equations that drive their AMM protocols.
+                                </p>
+                            </div>
+                            <div class="card-action left-align">
+                                <a target="_blank" class="blue-text right" href="https://medium.com/gamma-point-capital/the-hitchhikers-guide-to-defi-part-ii-dexs-amms-e9fdf5a2635d">
+                                    Read Full Article
+                                    <i class="material-icons right">arrow_right</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m12" style="margin-bottom: 20px; padding: 0px 30px;">
+                        <div class="card small">
+                            <div class="card-image">
+                                <img src="https://miro.medium.com/max/2000/0*g76BIvOSwxqZDnOm" style="filter: brightness(30%) !important;">
                                 <span class="card-title left-align">
                                     The Hitchhiker’s Guide to DeFi (Part I) — Lending Protocols & Superfluid Collateral
                                 </span>
                             </div>
                             <div class="card-content left-align">
-                                <p class="grey-text text-darken-4">
+                                <p class="grey-text text-darken-2">
                                     Capital markets are ripe for disruption. Decades of high commissions, massive incumbent banking institutions, legacy tech infrastructure, regulatory oversight, and compliance restrictions have stalled growth and innovation in the financial services industry.
                                 </p>
                             </div>
                             <div class="card-action left-align">
-                                <a target="_blank" class="blue-text" href="https://medium.com/gamma-point-capital/the-hitchhikers-guide-to-defi-part-i-lending-protocols-superfluid-collateral-f9fdd88ff543">Read Full Article</a>
+                                <a target="_blank" class="blue-text right" href="https://medium.com/gamma-point-capital/the-hitchhikers-guide-to-defi-part-i-lending-protocols-superfluid-collateral-27d8e654eefc">
+                                    Read Full Article
+                                    <i class="material-icons right">arrow_right</i>
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col s12 m6">
+                    <div class="col s12 m12" style="margin-bottom: 20px; padding: 0px 30px;">
                         <div class="card small">
                             <div class="card-image">
-                                <img src="https://miro.medium.com/max/1400/0*VJwaG4Gb5x84MGO0.jpg" style="filter: brightness(40%) !important;">
+                                <img src="https://miro.medium.com/max/1400/0*VJwaG4Gb5x84MGO0.jpg" style="filter: brightness(30%) !important;">
                                 <span class="card-title left-align">
                                     Impermanent Loss Hedge Total Return Swap Litepaper
                                 </span>
                             </div>
                             <div class="card-content left-align">
-                                <p class="grey-text text-darken-4">
+                                <p class="grey-text text-darken-2">
                                     In this paper, we describe a generalized, non-custodial, fungible protocol for the implementation of a total return swap that hedges liquidity providers’ (LPs) exposure to impermanent loss (IL) in liquidity pools of decentralized exchanges (DEXs). By paying a variable funding rate, LPs can hedge out any IL exposure and can be confident in receiving the original value of their investment, along with accrued trading fees, when they withdraw liquidity.
                                 </p>
                             </div>
                             <div class="card-action left-align">
-                                <a target="_blank" class="blue-text" href="https://medium.com/gamma-point-capital/impermanent-loss-hedge-total-return-swap-litepaper-fb78eaa753b9">Read Full Article</a>
+                                <a target="_blank" class="blue-text right" href="https://medium.com/gamma-point-capital/impermanent-loss-hedge-total-return-swap-litepaper-7c5e17e00332">
+                                    Read Full Article
+                                    <i class="material-icons right">arrow_right</i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -291,30 +361,52 @@
         </div>
     </div>
 
-    <div class="row hide-on-small-only">
-        <div class="col s12 center" style="position: absolute; bottom: 30px; float: center;">
-            <a href="https://twitter.com/sanatvc" class="btn-floating white">
-                <i class="fab fa-twitter grey-text text-darken-4"></i>
-            </a>
-            <a href="https://medium.com/gamma-point-capital" class="btn-floating white">
-                <i class="fab fa-medium grey-text text-darken-4"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/14586752" class="btn-floating white">
-                <i class="fab fa-linkedin grey-text text-darken-4"></i>
-            </a>
-        </div>
-    </div>
 
+
+
+
+
+
+    <!--  -->
+
+
+
+
+
+
+
+
+
+
+    <div class="fixed-action-btn horizontal click-to-toggle">
+        <a class="btn-floating btn-large" style="background-color: #224e73 !important;">
+            <i class="material-icons">contact_mail</i>
+        </a>
+        <ul>
+            <li class="waves-effect waves-light"><a href="https://twitter.com/sanatvc" target="_blank">
+                    <i class="fab fa-twitter grey-text text-lighten-4" style="font-size: 20px;"></i>
+                </a></li>
+            <li class="waves-effect waves-light"><a href="https://medium.com/gamma-point-capital" target="_blank">
+                    <i class="fab fa-medium grey-text text-lighten-4" style="font-size: 20px;"></i>
+                </a></li>
+            <li class="waves-effect waves-light"><a href="https://www.linkedin.com/company/14586752" target="_blank">
+                    <i class="fab fa-linkedin grey-text text-lighten-4" style="font-size: 20px;"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <script type="text/javascript">
         new WOW().init();
         $(document).ready(function () {
             $('.tabs').tabs();
+            $(".button-collapse").sideNav();
         });
 
         function pronounceShynCapital() {
