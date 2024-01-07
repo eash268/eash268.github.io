@@ -145,7 +145,7 @@ var coding = `
           <div class="col l4 m4 s12 minimargin">
             <img class="pointer responsive-img" src="static/img/coding/serenademe3.png" 
               onclick="showModal(
-                'SeranadeMe',
+                'SerenadeMe',
                 '<b>Description:</b> SerenadeMe is an AI that integrates with your Spotify account and creates playlists of recommended songs based on your likes. I built this app because I love listening to music but often find myself listening to the same songs over and over again. I wanted a way to discover new music that I would like, so I built SerenadeMe with a good friend. We registered the app on Spotify with the goal of sending it out to all our friends and family, but Spotify rejected our app because they do not allow developers to use any sort of machine learning or AI to develop on top of their API. Oh well! We still had a lot of fun building it and I have been using it to discover new music for myself. I have also been using it to discover new music for my friends and family by creating playlists for them and sending them the links. I have gotten great feedback from them and hope you enjoy it as well if it has not been taken down by Spotify by the time you use it!',
                 '<b>Technologies:</b> Google Books API, OpenAI, Amazon Associates API, Flask, MongoDB', 
                 'static/img/coding/serenademe3.png',
