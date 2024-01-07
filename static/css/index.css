@@ -17,6 +17,16 @@ p, li {
 	font-weight: 400;
 }
 
+img {
+	/* black and white */
+	filter: grayscale(100%);
+}
+
+/* when image is hovered, make it colored */
+img:hover {
+	filter: grayscale(0%);
+}
+
 iframe {
 	overflow-x: hidden !important;
   }
