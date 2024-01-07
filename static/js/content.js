@@ -53,7 +53,7 @@ var coding = `
           <div class="col l4 m4 s12 minimargin">
             <img class="pointer responsive-img" src="static/img/coding/infinito.png">
             <p class="black-text nomargin menuitem left-align" style="width: 75%">
-              An app that plays an infinite conversation between two AI bots
+              An app that plays an infinite conversation between two LLMs
             </p>
             <br class="hide-on-med-and-up">
           </div>
