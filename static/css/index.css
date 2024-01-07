@@ -169,6 +169,10 @@ iframe {
 	text-transform: uppercase;
 }
 
+.pointer {
+	cursor: pointer !important;
+}
+
 .pointer:hover {
 	font-weight: 500;
 }
@@ -181,10 +185,6 @@ iframe {
 	font-weight: 400; 
 	font-size: 11px;
 	text-transform: uppercase;
-}
-
-.pointer {
-	cursor: pointer;
 }
 
 #left_section {
