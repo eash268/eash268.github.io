@@ -1,0 +1,213 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+	/* overflow-y: hidden !important; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+	/* font-family: 'Domine', serif; */
+}
+
+a {
+	text-decoration: underline;
+}
+
+p, li {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+iframe {
+	overflow-x: hidden !important;
+  }
+
+.blue-text {
+	color: #06c !important;
+}
+
+.green-text {
+	color: #199f5c !important;
+}
+
+.greyscale {
+	filter: grayscale(100%);
+}
+
+.nomargin {
+	margin: 0px !important;
+}
+
+.minimargin {
+	padding-left: 2px !important;
+	padding-right: 2px !important;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* css class to hide scrollbar on a scrollable container */
+.hide-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+/* css class to hide scrollbar on a scrollable container */
+.hide-scrollbar {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+.responsive-img {
+	width: 100%;
+	max-height: 500px !important;
+	object-fit: cover;
+	object-position: top;
+	margin-bottom: 5px !important;
+}
+
+.full-height {
+    height: calc(100vh);
+	max-height: calc(100vh);
+	overflow-y: hidden !important;
+}
+
+.crease-right {
+	border-right: 1px solid #E5E5E5;
+}
+
+.crease-bottom {
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.click-shrink { 
+	transition: all .1s ease-in-out; 
+}
+
+.click-shrink:active { 
+	transform: scale(0.9); 
+}
+
+.no-border {
+	border: 1px solid #64b5f6 !important;
+}
+
+.section {
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: lighter;
+	font-size: 16px;
+	margin-top: 10px;
+	border: 1px solid white;
+	color: white;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.skill {
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: lighter;
+	font-size: 14px;
+	margin-top: 10px;
+	border: 1px solid white;
+	color: black;
+	background-color: white;
+}
+
+.secondary-text {
+	color: #BC3F00 !important;
+}
+
+.story {
+	font-weight: 300;
+}
+
+.caption {
+	font-size: 9px;
+	font-weight: 300;
+}
+
+.story_block {
+	height: 100vh;
+	overflow-y: scroll !important;
+}
+
+#greeting {
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: 500;
+	margin-top: 41vh;
+	font-size: 22px;
+	z-index: 999 !important;
+	text-transform: uppercase;
+}
+
+.expectations {
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: 300;
+	font-size: 12px;
+	margin-top: 0;
+	z-index: 999 !important;
+	text-transform: uppercase;
+}
+
+.paragraph {
+	font-weight: 350; 
+	font-size: 11px;
+}
+
+.menuitem {
+	font-weight: 350; 
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+.pointer:hover {
+	font-weight: 500;
+}
+
+.menuitem-selected {
+	font-weight: 500 !important;
+}
+
+.topper {
+	font-weight: 400; 
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+#left_section {
+	/* background: url("../img/eash2.png") center top no-repeat;  */
+	position: center;
+	background-size: contain;
+	/* background-color: #223D58; */
+	background: rgb(56,80,104);
+	/* background: radial-gradient(circle, rgba(56,80,104,1) 0%, rgba(34,61,88,1) 66%); */
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 66%);
+	/*background-color: #001f3f;*/
+	background-repeat: no-repeat;
+}
+
+#section_title {
+	text-transform: uppercase;
+}
+
+#story_title {
+	margin-top: 10px;
+	margin-bottom: 16px;
+}
+
+#top_right_menu_icon {
+	margin-top: 10.875px;
+}
+
+#background-image {
+    border-top: 50px solid #fff;
+    border-bottom: 50px solid #fff;
+    background: url('https://cdn.dribbble.com/users/1201592/screenshots/9078494/media/422a760a51cef7de2fa3db9daf697853.gif') center bottom no-repeat;
+	background-position: right 80px top 30px;
+    background-size: contain;
+    margin-top: 0px;
+    overflow-y: scroll !important;
+}
