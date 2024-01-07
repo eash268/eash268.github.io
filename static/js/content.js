@@ -162,7 +162,7 @@ var coding = `
             <img class="pointer responsive-img" src="static/img/coding/rundown.png" 
               onclick="showModal(
                 'Rundown', 
-                '<b>Description:</b> Google has a cool feature called People Also Ask when you search for certain topics that lists questions and answers related to the topic you searched for. I thought it would be cool to build an app that does this for any topic, so I built Rundown, an app that gives you a complete rundown of any topic. It was a cool app, but I use Lectura to learn about topics now, so I took it down. I still think it is a cool idea and may revisit it in the future or integrate it into Lectura.',
+                '<b>Description:</b> Google has a cool feature called People Also Ask when you search for certain topics that lists questions and answers related to the topic you searched for. I thought it would be cool to build an app that does this for any topic and includes 25-50 questions rather than the 5 Google shows, so I built Rundown, an app that gives you a complete rundown of any topic. It was a cool app, but I use Lectura to learn about topics now, so I took it down. I still think it is a cool idea and may revisit it in the future or integrate it into Lectura.',
                 '<b>Technologies:</b> OpenAI, Flask',
                 'static/img/coding/rundown.png',
                 ''
