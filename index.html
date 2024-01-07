@@ -133,6 +133,30 @@
 		<div id="mobilecontent" class="content hide-on-med-and-up" style="padding-top: 10vh !important;">
 			
 		</div>
+
+		<!-- Modal Structure -->
+		<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4 id="modal-title">Modal Header</h4>
+
+			<div class="row">
+				<div class="col s6">
+					<img src="static/img/coding/mantro.png" id="modal-image" style="width: 100%; height: auto;">
+				</div>
+
+				<div class="col s6">
+					<p id="modal-description">A bunch of text</p>
+					<p id="modal-technologies">A bunch of technologies</p>
+					<p id="modal-url">A URL</p>
+				</div>
+			</div>	
+
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+		</div>
+		</div>
+
 	</main>
 
 	<!-- JS -->
@@ -166,8 +190,25 @@
 			M.toast({html: 'Please contact me if you\'d like to try any of my apps!', classes: 'rounded'});
 		}
 
+		function showModal(title, description, technologies, image, url) {
+			// set title
+			$('#modal-title').html(title);
+			// set description
+			$('#modal-description').html(description);
+			// set technologies
+			$('#modal-technologies').html(technologies);
+			// set url
+			$('#modal-url').html(url);
+			// set image
+			$('#modal-image').attr('src', image);
+			// open modal1
+			$('#modal1').modal('open');
+		}
+		
 		$(document).ready(function () {
 			$('.materialboxed').materialbox();
+			$('.modal').modal();
+
 			switchContent($('.menuitem')[0], coding);
 
 			// if there is a hash in the url, switch to that content

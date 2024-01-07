@@ -17,13 +17,13 @@ p, li {
 	font-weight: 400;
 }
 
-img {
+img.pointer {
 	/* black and white */
 	filter: grayscale(100%);
 }
 
 /* when image is hovered, make it colored */
-img:hover {
+img.pointer:hover {
 	filter: grayscale(0%);
 }
 

@@ -7,7 +7,15 @@ var coding = `
         <div class="row">
 
           <div class="col l4 m4 s12 minimargin">
-            <img class="pointer responsive-img" src="static/img/coding/mantro.png">
+            <img class="pointer responsive-img" src="static/img/coding/mantro.png" 
+              onclick="showModal(
+                'Mantro', 
+                '<b>Description:</b> After a deep conversation with a friend about mindfulness, he recommended I read The Untethered Soul, a book about witnessing thoughts without attachment to find true and lasting happiness. While I really wanted to read the book, I knew that I would probably buy it and start it but eventually get distracted and never finish it. I thought it would be great if there was a way to get the key insights from the book without having to read the whole thing, so I asked ChatGPT to summarize the key lessons of the book for me. I then had the idea to do this for any book, so I built Mantro, an app that summarizes books and lets you interact with the author. I used the Google Books API to be able to scrape books then fed them to an LLM to generate a summary. I then added a feature where you can ask the author questions and the LLM will generate a response as if the author was responding. I have used this app to summarize many books I find interesting and also get recommendations for new books, including The Untethered Soul, Meditations by Marcus Aurelius, and more. I added several more features such as book collections, summarizing multiple books at once, and searching books by topic. I will have to make you an account if you want to try this app to please feel free to shoot me an email if you are interested!',
+                '<b>Technologies:</b> Google Books API, OpenAI, Amazon Associates API, Flask, MongoDB', 
+                'static/img/coding/mantro.png',
+                ''
+              )"
+            >
             <p class="black-text nomargin menuitem left-align" style="width: 75%">
               An app that summarizes books and lets you interact with the author
             </p>
@@ -15,15 +23,31 @@ var coding = `
           </div>
 
           <div class="col l4 m4 s12 minimargin">
-            <img class="pointer responsive-img" src="static/img/coding/serenademe3.png">
+            <img class="pointer responsive-img" src="static/img/coding/rmfl.png" 
+              onclick="showModal(
+                'Roast My Fantasy League', 
+                '<b>Description:</b> During the 2023 NFL season, one of my roommates who is big into football added me to his fantasy football league. I had never played fantasy football before and was very eager to try it because I had always found the concept fascinating. We used an app called Sleeper to administer the league, and I was very impressed by the app. Not only was it performant and had great UI/UX, it also had a robust and easy API. I started by scraping my roster and wrote a script to see if there were better players on the waver wire that I could pick up. I then thought about the classic How Bad Is Your Streaming Music app that went viral in 2021 for roasting your Spotify listening history after connecting your account and thought it would be fun to build a similar app for fantasy football. I built the app in a few hours and it was a lot of fun to build and use. My roommates were screaming and laughing at the app when they used it, which was a great feeling that something I made could produce a response like that. (Subtle flex: I won the league that year!))',
+                '<b>Technologies:</b> Sleeper API, OpenAI, Flask, MongoDB', 
+                'static/img/coding/rmfl.png',
+                '<b>URL:</b> <a target=_blank href=http://roastmyfantasyleague.com>www.roastmyfantasyleague.com</a>'
+              )"
+            >
             <p class="black-text nomargin menuitem left-align" style="width: 75%">
-              An app that creates Spotify playlists of recommended songs based on your likes
+              An app that roasts your fantasy football roster
             </p>
             <br class="hide-on-med-and-up">
           </div>
 
           <div class="col l4 m4 s12 minimargin">
-            <img class="pointer responsive-img" src="static/img/coding/lucidia.png">
+            <img class="pointer responsive-img" src="static/img/coding/lucidia.png" 
+              onclick="showModal(
+                'Sacred Texts', 
+                '<b>Description:</b> Between 1903 and 1911, author Leo Tolstoy collected his favorite quotes of insight and wisdom which he published in a book called A Calendar of Wisdom. I bought this book to read on vacation and loved every quote but felt I was not able to fully process and retain each one, so I built an app that texts me one random quote each day. As generative image models have become more popular, I also added a feature that generates a random image to accompany each quote by chaining an LLM to generate an art description from the quote and feeding it to DALLE. As a subtle touch, the quotes are sent out at 11:11 AM every day. I have shown the bot to friends and family and have gotten 20 of them to sign up so far. It has been a great way to start my day with a little bit of wisdom and beauty, and I encourage you to sign up as well in the link below!', 
+                '<b>Technologies:</b> OpenAI, DALLE, Twilio, Flask, MongoDB, AWS Lambda',
+                'static/img/coding/lucidia.png',
+                '<b>URL:</b> <a target=_blank href=http://buddhisttexts.io>www.sacredtexts.io</a>'
+              )"
+            >
             <p class="black-text nomargin menuitem left-align" style="width: 75%">
               An app that texts you a daily quote of wisdom with accompanying art
             </p>
@@ -35,7 +59,15 @@ var coding = `
         <div class="row" style="margin-top: 50px !important">
 
           <div class="col l4 m4 s12 minimargin">
-            <img class="pointer responsive-img" src="static/img/coding/periodica.png">
+            <img class="pointer responsive-img" src="static/img/coding/periodica.png" 
+              onclick="showModal(
+                'Periodica', 
+                '<b>Description:</b> Staying up-to-date on news and current events is important, but I have always hated how political and biased many news stories are these days. I wanted a way to read news in a more objective way, so I built Periodica, an app that lets you read news in the form of AI-generated summaries. I used the Google News API to get the latest news stories and then fed the summaries to an LLM to generate a summary of the summary. I have been using this app to read the news for the past few years and have found it to be a great way to stay up-to-date on current events without getting bogged down by the political bias of many news sources. I encourage you to give it a try and hope you find it useful!', 
+                '<b>Technologies:</b> Google News API, OpenAI, Flask, MongoDB, AWS Lambda', 
+                'static/img/coding/periodica.png',
+                '<b>URL:</b> <a target=_blank href=https://periodicaapp.herokuapp.com>www.periodicaapp.com</a>'
+              )"
+            >
             <p class="black-text nomargin menuitem left-align" style="width: 75%">
               An app that lets you read news in the form of AI-generated summaries
             </p>
@@ -43,7 +75,15 @@ var coding = `
           </div>
 
           <div class="col l4 m4 s12 minimargin">
-            <img class="pointer responsive-img" src="static/img/coding/lectura.png">
+            <img class="pointer responsive-img" src="static/img/coding/lectura.png" 
+              onclick="showModal(
+                'Lectura', 
+                '<b>Description:</b> ChatGPT is great to learn about topics at a high level, but to really get deep, you have to ask many follow-up questions. The best way to learn about a topic in detail is still to take a course on it, but courses are expensive and time-consuming. I built Lectura to solve this problem. Lectura is an app that uses AI to generate course notes for any subject. You can enter a topic and Lectura will generate a list of the most important concepts in that topic. You can then click on any concept to get detailed lecture notes for that concept. I have used Lectura to learn about many topics I find interesting, including Buddhism, brand strategy, string theory, and the history of the Roman Empire. I also experiemented with ways to test whether the user is actually retaining what they are reading and added a feature where you can click on any bullet point which blurs it and asks you to type it from memory. You can write the bullet point in your own words and then a custom OpenAI function checks your input for sufficient understanding. I have found this to be a great way to force yourself to retain what you are reading. This is one of my favorite projects so far, and I have several future directions in mind for it, but I encourage you to give it a try and hope you find it useful!', 
+                '<b>Technologies:</b> ChatGPT, OpenAI, Flask', 
+                'static/img/coding/lectura.png',
+                '<b>URL:</b> <a target=_blank href=https://trylectura-85d083c6f86a.herokuapp.com>www.lectura.io</a>'
+              )"
+            >
             <p class="black-text nomargin menuitem left-align" style="width: 75%">
               An app that uses AI to generate course notes for any subject
             </p>
@@ -51,7 +91,15 @@ var coding = `
           </div>
 
           <div class="col l4 m4 s12 minimargin">
-            <img class="pointer responsive-img" src="static/img/coding/infinito.png">
+            <img class="pointer responsive-img" src="static/img/coding/infinito.png" 
+              onclick="showModal(
+                'Infinito', 
+                '<b>Description:</b> This project was inspired by The Infinite Conversation, an AI generated, never-ending discussion between Werner Herzog and Slavoj Žižek. My twist on it was to create a conversation between two LLMs with a focus on interesting and controversial conversation topics. I also experiemented with a few different text-to-speech technologies, trying the built-in web package which was robotic, Amazon Polly which was slow, and ElevenLabs which was perfect (despite being a bit expensive). My propmt for both sides of the conversation after some experimentation is: <br><br><i>Continue only the next line (not more than one) of this conversation in the most engaging way possible for a third-party listener of the conversation who loves hearing lively debates, friendly banter, interesting stories, and learning new things. Do not let the conversation end and do not say bye; suggest a change of topic instead if the conversation is in a lull.</i>', 
+                '<b>Technologies:</b> OpenAI, Flask, ElevenLabs', 
+                'static/img/coding/infinito.png',
+                '<b>URL:</b> <a target=_blank href=https://infinito.herokuapp.com>www.infinito.io</a>'
+              )"
+            >
             <p class="black-text nomargin menuitem left-align" style="width: 75%">
               An app that plays an infinite conversation between two LLMs
             </p>
@@ -63,7 +111,15 @@ var coding = `
         <div class="row" style="margin-top: 50px !important">
 
           <!--<div class="col l4 m4 s12 minimargin">
-            <img class="pointer responsive-img" src="static/img/coding/plumo.png">
+            <img class="pointer responsive-img" src="static/img/coding/plumo.png" 
+              onclick="showModal(
+                'Mantro', 
+                '<b>Description:</b> An app that summarizes books and lets you interact with the author', 
+                '<b>Technologies:</b> Google Books API, OpenAI, Amazon Associates API, Flask, MongoDB', 
+                'static/img/coding/plumo.png',
+                '<b>URL:</b> <a target=_blank href=http://buddhisttexts.io>buddhisttexts.io</a>'
+              )"
+            >
             <p class="black-text nomargin menuitem left-align" style="width: 75%">
               An app that analyzes your journal entries and gives you life advice
             </p>
@@ -71,7 +127,15 @@ var coding = `
           </div>-->
 
           <div class="col l4 m4 s12 minimargin">
-            <img class="pointer responsive-img" src="static/img/coding/biblio.png">
+            <img class="pointer responsive-img" src="static/img/coding/biblio.png" 
+              onclick="showModal(
+                'Biblio', 
+                '<b>Description:</b> Back when OpenAI had not yet released ChatGPT and the best model out was Da Vinci, I wanted a way to interact with the LLM on the go. I built Biblio, an SMS-based version of ChatGPT. This one is pretty self-explanatory and was a fun project to build. Within a few months of building it, OpenAI released ChatGPT. Story of my life!',
+                '<b>Technologies:</b> OpenAI, Twilio, Flask', 
+                'static/img/coding/biblio.png',
+                ''
+              )"
+            >
             <p class="black-text nomargin menuitem left-align" style="width: 75%">
               An SMS-based version of ChatGPT
             </p>
@@ -79,15 +143,31 @@ var coding = `
           </div>
 
           <div class="col l4 m4 s12 minimargin">
-            <img class="pointer responsive-img" src="static/img/coding/rmfl.png">
+            <img class="pointer responsive-img" src="static/img/coding/serenademe3.png" 
+              onclick="showModal(
+                'SeranadeMe',
+                '<b>Description:</b> SerenadeMe is an AI that integrates with your Spotify account and creates playlists of recommended songs based on your likes. I built this app because I love listening to music but often find myself listening to the same songs over and over again. I wanted a way to discover new music that I would like, so I built SerenadeMe with a good friend. We registered the app on Spotify with the goal of sending it out to all our friends and family, but Spotify rejected our app because they do not allow developers to use any sort of machine learning or AI to develop on top of their API. Oh well! We still had a lot of fun building it and I have been using it to discover new music for myself. I have also been using it to discover new music for my friends and family by creating playlists for them and sending them the links. I have gotten great feedback from them and hope you enjoy it as well if it has not been taken down by Spotify by the time you use it!',
+                '<b>Technologies:</b> Google Books API, OpenAI, Amazon Associates API, Flask, MongoDB', 
+                'static/img/coding/serenademe3.png',
+                '<b>URL:</b> <a target=_blank href=https://serenademe.herokuapp.com>www.serenademe.io</a>'
+              )"
+            >
             <p class="black-text nomargin menuitem left-align" style="width: 75%">
-              An app that roasts your fantasy football roster
+              An app that creates Spotify playlists of recommended songs based on your likes
             </p>
             <br class="hide-on-med-and-up">
           </div>
 
           <div class="col l4 m4 s12 minimargin">
-            <img class="pointer responsive-img" src="static/img/coding/rundown.png">
+            <img class="pointer responsive-img" src="static/img/coding/rundown.png" 
+              onclick="showModal(
+                'Rundown', 
+                '<b>Description:</b> Google has a cool feature called People Also Ask when you search for certain topics that lists questions related to the topic you searched for. I thought it would be cool to build an app that does this for any topic, so I built Rundown, an app that gives you a complete rundown of any topic. It was a cool app, but I use Lectura to learn about topics now, so I took it down. I still think it is a cool idea and may revisit it in the future or integrate it into Lectura.',
+                '<b>Technologies:</b> OpenAI, Flask',
+                'static/img/coding/rundown.png',
+                ''
+              )"
+            >
             <p class="black-text nomargin menuitem left-align" style="width: 75%">
               An app that gives you a complete rundown of any topic
             </p>
