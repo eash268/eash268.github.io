@@ -176,6 +176,30 @@ var coding = `
 
         </div>
 
+        <div class="row" style="margin-top: 50px !important">
+
+          <!--<div class="col l4 m4 s12 minimargin">
+            <img class="pointer responsive-img" src="static/img/coding/plumo.png" 
+              onclick="showModal(
+                'Mantro', 
+                '<b>Description:</b> An app that summarizes books and lets you interact with the author', 
+                '<b>Technologies:</b> Google Books API, OpenAI, Amazon Associates API, Flask, MongoDB', 
+                'static/img/coding/plumo.png',
+                '<b>URL:</b> <a target=_blank href=http://buddhisttexts.io>buddhisttexts.io</a>'
+              )"
+            >
+            <p class="black-text nomargin menuitem left-align" style="width: 75%">
+              An app that analyzes your journal entries and gives you life advice
+            </p>
+            <br class="hide-on-med-and-up">
+          </div>-->
+
+          <!-- Rate My Photography -->
+          <!-- Poker App -->
+          <!-- Life Purpose Finder -->
+        
+        </div>
+
       </div>
     </div>
   </div>
