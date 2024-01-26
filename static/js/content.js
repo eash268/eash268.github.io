@@ -42,7 +42,7 @@ var coding = `
             <img class="pointer responsive-img" src="static/img/coding/lucidia.png" 
               onclick="showModal(
                 'Sacred Texts', 
-                '<b>Description:</b> Between 1903 and 1911, author Leo Tolstoy collected his favorite quotes of insight and wisdom which he published in a book called A Calendar of Wisdom. I bought this book to read on vacation and loved every quote but felt I was not able to fully process and retain each one, so I built an app that texts me one random quote each day. As generative image models have become more popular, I also added a feature that generates a random image to accompany each quote by chaining an LLM to generate an art description from the quote and feeding it to DALLE. I encourage you to sign up in the link below!', 
+                '<b>Description:</b> Between 1903 and 1911, author Leo Tolstoy collected his favorite quotes of insight and wisdom which he published in a book called A Calendar of Wisdom. I bought this book to read on vacation and loved every quote but felt I was not able to fully process and retain each one, so I built an app that texts me one random quote each day. As generative image models have become more popular, I also added a feature that generates a random image to accompany each quote by chaining an LLM to generate a painting description from the quote and feeding it to DALLE. I encourage you to sign up in the link below!', 
                 '<b>Technologies:</b> OpenAI, DALLE, Twilio, Flask, MongoDB, AWS Lambda',
                 'static/img/coding/lucidia.png',
                 '<b>URL:</b> <a target=_blank href=http://buddhisttexts.io>www.sacredtexts.io</a>'
