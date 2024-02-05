@@ -78,7 +78,7 @@ var coding = `
             <img class="pointer responsive-img" src="static/img/coding/lectura.png" 
               onclick="showModal(
                 'Lectura', 
-                '<b>Description:</b> ChatGPT is great to learn about topics at a high level, but to really get deep, you have to ask many follow-up questions. The best way to learn about a topic in detail is still to take a course on it, but courses are expensive and time-consuming. I built Lectura to solve this problem. Lectura is an app that uses AI to generate course notes for any subject. You can enter a topic and Lectura will generate a list of the most important concepts in that topic. You can then click on any concept to get detailed lecture notes for that concept. I encourage you to give it a try and hope you find it useful!', 
+                '<b>Description:</b> ChatGPT is great to learn about topics at a high level, but to really get deep, you have to ask many follow-up questions. The best way to learn about a topic in detail is still to take a course on it, but courses are expensive and time-consuming. I built Lectura to solve this problem. Lectura is an app that uses AI to generate course notes for any subject. You can enter any topic and Lectura will generate a list of the most important concepts in that topic. You can then click on any concept to get detailed lecture notes for that concept. I encourage you to give it a try and hope you find it useful!', 
                 '<b>Technologies:</b> ChatGPT, OpenAI, Flask', 
                 'static/img/coding/lectura.png',
                 '<b>URL:</b> <a target=_blank href=https://trylectura-85d083c6f86a.herokuapp.com>www.lectura.io</a>'
