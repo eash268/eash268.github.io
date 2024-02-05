@@ -130,7 +130,7 @@ var coding = `
             <img class="pointer responsive-img" src="static/img/coding/biblio.png" 
               onclick="showModal(
                 'Biblio', 
-                '<b>Description:</b> Back when OpenAI had not yet released ChatGPT and the best model out was Da Vinci, I wanted a way to interact with the LLM on the go. I built Biblio, an SMS-based version of ChatGPT. This one is pretty self-explanatory and was a fun project to build. Within a few months of building it, OpenAI released ChatGPT. Classic!',
+                '<b>Description:</b> Back when OpenAI had not yet released ChatGPT and the best model out was Da Vinci, I wanted a way to interact with the LLM on the go. I built Biblio, an SMS-based version of ChatGPT. This one is pretty self-explanatory and was a fun project to build. Within a few months of me building it, OpenAI released ChatGPT. Classic!',
                 '<b>Technologies:</b> OpenAI, Twilio, Flask', 
                 'static/img/coding/biblio.png',
                 ''
