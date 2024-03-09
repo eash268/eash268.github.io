@@ -1,20 +1,72 @@
+@font-face {
+    font-family: 'CeraPRO';
+    src: url('../fonts/cerapro/Cera Pro Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CeraPRO';
+    src: url('../fonts/cerapro/Cera Pro Regular Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'CeraPRO';
+    src: url('../fonts/cerapro/Cera Pro Medium.otf') format('opentype');
+    font-weight: 500; /* medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CeraPRO';
+    src: url('../fonts/cerapro/Cera Pro Bold.otf') format('opentype');
+    font-weight: bold; /* or 700 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CeraPRO';
+    src: url('../fonts/cerapro/Cera Pro Light.otf') format('opentype');
+    font-weight: 300; /* light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CeraPRO';
+    src: url('../fonts/cerapro/Cera Pro Black.otf') format('opentype');
+    font-weight: 900; /* black */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CeraPRO';
+    src: url('../fonts/cerapro/Cera Pro Black Italic.otf') format('opentype');
+    font-weight: 900; /* black */
+    font-style: italic;
+}
+
 html, body {
+	font-family: 'Roboto', fallback, sans-serif !important;
     height: 100%;
     margin: 0px;
 	/* overflow-y: hidden !important; */
 }
 
 h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', fallback, sans-serif !important;
 	/* font-family: 'Domine', serif; */
 }
 
-a {
-	text-decoration: underline;
+p, li {
+	font-family: 'Roboto', fallback, sans-serif !important;
+	font-weight: 400;
 }
 
-p, li {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
+a {
+	font-family: 'Roboto', fallback, sans-serif !important;
+	text-decoration: underline;
 }
 
 img.pointer {
@@ -102,7 +154,6 @@ iframe {
 }
 
 .section {
-	font-family: 'Roboto', sans-serif !important;
 	font-weight: lighter;
 	font-size: 16px;
 	margin-top: 10px;
@@ -113,7 +164,6 @@ iframe {
 }
 
 .skill {
-	font-family: 'Roboto', sans-serif !important;
 	font-weight: lighter;
 	font-size: 14px;
 	margin-top: 10px;
@@ -141,7 +191,6 @@ iframe {
 }
 
 #greeting {
-	font-family: 'Roboto', sans-serif !important;
 	font-weight: 500;
 	margin-top: 41vh;
 	font-size: 22px;
@@ -150,7 +199,6 @@ iframe {
 }
 
 .expectations {
-	font-family: 'Roboto', sans-serif !important;
 	font-weight: 300;
 	font-size: 12px;
 	margin-top: 0;
