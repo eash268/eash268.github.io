@@ -63,7 +63,7 @@ var coding = `
               onclick="showModal(
                 'GrokNotes', 
                 '<b>Description:</b> ChatGPT is great to learn about topics at a high level, but to really get deep, you have to ask many follow-up questions. The best way to learn about a topic in detail is still to take a course on it, but courses are expensive and time-consuming. I built GrokNotes to solve this problem. GrokNotes is an app that uses AI to generate course notes for any subject. You can enter any topic and GrokNotes will generate a list of the most important concepts in that topic. You can then click on any concept to get detailed lecture notes for that concept. I also incorporated a feature that tests your understanding of concepts by asking you to type them in your own words and uses AI to check your answers. I encourage you to give it a try and hope you find it useful!', 
-                '<b>Technologies:</b> ChatGPT, OpenAI, Flask', 
+                '<b>Technologies:</b> React, OpenAI, Flask, Redis, MongoDB', 
                 'static/img/coding/groknotes2.png',
                 '<b>URL:</b> <a target=_blank href=https://groknotes.xyz>www.groknotes.xyz</a>'
               )"
