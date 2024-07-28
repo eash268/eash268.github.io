@@ -29,6 +29,8 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700,800" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Domine:100,300,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
 
@@ -50,73 +52,20 @@
 
 
 <body>
-	<main>
-        <div class="row portfolio animated fadeInLeft" style="position: fixed; top: 0px; left: 0; margin: 24px; z-index: 999;">
-            <p class="black-text nomargin" onclick="window.location.reload()" style="font-weight: 600; font-size: 26px; cursor: pointer;">EASH AGGARWAL</p>
-			
-			<br>
-			<p class="black-text nomargin menuitem left-align hide-on-small-only" style="font-weight: 350 !important;">
-                    Welcome to my portfolio <br>
-					of coding projects!
-            </p>
-            <!-- <br>
-            <p class="black-text nomargin menuitem pointer left-align" onclick="switchContent(this, coding)">
-                Coding
-            </p>
-			<p class="black-text nomargin menuitem pointer left-align" onclick="switchContent(this, photography)">
-				Photography
-			</p>
-            <p class="black-text nomargin menuitem pointer left-align" onclick="switchContent(this, music)">
-				Music
+	<main style="margin: 20px !important">
+        <div class="portfolio" style="width: 100%; display: flex; justify-content: space-between; margin-bottom: 80px;">
+			<p onclick="window.open('https://github.com/eash268')" class="right pointer black-text nomargin right-align" style="font-weight: 100; font-size: 24px; padding-left: 12px">
+				<i class="fab fa-github black-text"></i>
 			</p>
 
-            <br>
+			<p class="black-text nomargin tangerine-regular" onclick="window.location.reload()" style="font-size: 36px; cursor: pointer;">Eash Aggarwal</p>
 
-            <p class="black-text nomargin menuitem pointer left-align" onclick="switchContent(this, technical_product_manager)">
-                About Me
-            </p>
-            <p class="black-text nomargin menuitem pointer left-align" onclick="location.href = 'mailto:eash268@gmail.com'">
-                Get in Touch
-            </p>
-
-            <br> -->
-
-            <!-- <p class="black-text nomargin menuitem pointer left-align hide-on-small-only" onclick="switchContent(this, resume)">
-                📄 &nbsp;Resume
-            </p> -->
+			<p onclick="window.open('https://www.linkedin.com/in/eash-aggarwal/')" class="right pointer black-text nomargin right-align" style="font-weight: 100; font-size: 24px; padding-right: 12px">
+				<i class="fab fa-linkedin black-text"></i> 
+			</p>
         </div>
 
-        <div class="row work animated fadeInRight hide-scrollbar" style="position: fixed; top: 0px; right: 0; margin: 24px; height: 100vh; overflow-y: scroll; z-index: 999;">
-			<div class="input-field" style="margin: 0; padding: 0;">
-				<input style="display: none" placeholder="Type something..." id="first_name" type="text" class="validate">
-			</div>
-
-			<div class="row" style="margin: 0; padding: 0; margin-bottom: 20px !important;">
-				<p id="search_icon" onclick="window.open('https://www.linkedin.com/in/eash-aggarwal/')" class="right pointer black-text nomargin right-align" style="font-weight: 600; font-size: 24px; margin-left: 15px !important;">
-					<i class="fab fa-linkedin black-text"></i> 
-				</p>
-				<!-- <p id="search_icon" onclick="window.open('https://www.instagram.com/eashspieces/')" class="right pointer black-text nomargin right-align" style="font-weight: 600; font-size: 24px; margin-left: 15px !important;">
-					<i class="fab fa-instagram black-text"></i>
-				</p> -->
-				<p id="search_icon" onclick="window.open('https://github.com/eash268')" class="right pointer black-text nomargin right-align" style="font-weight: 600; font-size: 24px; margin-left: 15px !important;">
-					<i class="fab fa-github black-text"></i>
-				</p>
-				
-			</div>
-
-			<!-- <p class="black-text nomargin menuitem pointer right-align hide-on-small-only">
-                <i>
-                    WELCOME TO &nbsp; <BR>
-                    MY WEBSITE! &nbsp; <BR>
-                </i>
-            </p> -->
-
-			
-
-			<br><br><br>
-        </div>
-
-		<div id="content" class="content hide-on-small-only hide-scrollbar" style="margin-left: 80px; margin-top: -20px; margin-bottom: 80px; overflow-y: scroll !important;">
+		<div id="content" class="content hide-on-small-only hide-scrollbar">
 			<div class="row full-height">
                 <div class="col l12 m12 s12 full-height z-depth-0">
 					<div id="background-image" class="container hide-scrollbar full-height animated fadeIn animate-delay-2s hide-on-small-only"></div>
@@ -129,13 +78,13 @@
 		</div>
 
 		<!-- Modal Structure -->
-		<div id="modal1" class="modal">
+		<div id="modal1" class="modal" style="width: 80vw;">
 		<div class="modal-content">
 			<h4 id="modal-title">Modal Header</h4>
 
 			<div class="row">
 				<div class="col m6 s12">
-					<img src="static/img/coding/mantro.png" id="modal-image" class="materialboxed" style="width: 100%; height: auto;">
+					<img src="static/img/coding/mantro.png" id="modal-image" class="materialboxed responsive-img" style="width: 100%; height: auto; object-fit: contain;">
 				</div>
 
 				<div class="col m6 s12">
